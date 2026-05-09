@@ -1,0 +1,1 @@
+cd C:\Rail\build; cmake --build . --config Debug; Debug\railc.exe

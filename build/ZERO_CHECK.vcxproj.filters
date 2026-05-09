@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Rail\build\CMakeFiles\10b1502850e5ffd8987f7ed6e610c3da\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{07DA1A55-3FD0-3A7E-B15D-5841109A40AE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
