@@ -5,5 +5,5 @@
 #include <llvm/Support/raw_ostream.h>
 
 int main() {
-    std::cout << "Hello rail!" << std::endl;
+    std::cout << "Hello rail! Language with nice syntax" << std::endl;
 }
