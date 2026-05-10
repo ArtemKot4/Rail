@@ -1,0 +1,33 @@
+#ifndef LEXICAL_ANALYZER_H
+#define LEXICAL_ANALYZER_H
+
+#include <vector>
+#include <string>
+#include "Token.h"
+
+class LexicalAnalyzer {
+private:
+    std::string text;
+    int position = 0;
+    int line = 1;
+    int column = 1;
+    char currentChar = '\0';
+    std::vector<Token> tokens;
+
+    char peek(int offset = 1);
+    void advance(int count = 1);
+    void skipWhitespace();
+    bool isDigit(char c);
+    bool isWhitespace(char c);
+    Token tokenizeNumber();
+    Token tokenizeString();
+    Token tokenizeIdentifier();
+    Token tokenizeKeyword(const std::string& word);
+    Token next();
+
+public:
+    LexicalAnalyzer(const std::string& source);
+    std::vector<Token> tokenize();
+};
+
+#endif

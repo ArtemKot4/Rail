@@ -1,9 +1,11 @@
 ﻿#include <iostream>
-#include <llvm/IR/LLVMContext.h>
-#include <llvm/IR/Module.h>
-#include <llvm/IR/IRBuilder.h>
-#include <llvm/Support/raw_ostream.h>
+#include "compiler/lexical_analyzer/LexicalAnalyzer.h"
 
 int main() {
-    std::cout << "Hello rail! Language with nice syntax" << std::endl;
+    std::string text =
+    " const appleCount: int = 10;                                ";
+
+    std::unique_ptr<LexicalAnalyzer> analyzer = std::make_unique<LexicalAnalyzer>(text);
+
+    std::cout << "hello train station from rails!";
 }

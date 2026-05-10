@@ -364,7 +364,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Rail\Rail\main.cpp" />
+    <ClCompile Include="C:\Rail\src\compiler\lexical_analyzer\LexicalAnalyzer.cpp" />
+    <ClCompile Include="C:\Rail\src\main.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
