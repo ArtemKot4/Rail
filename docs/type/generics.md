@@ -28,8 +28,9 @@ Generic тип объявляется при помощи модификатор
 <T super Type>
 ```
 
-## Вызываемые с Generic типами
-Мы можем принимать в качестве аргументов для функций и процедур generic типы.
+## Generic-аргументы
+Мы можем принимать в качестве аргументов для функций, процедур и лямбд generic типы.
+
 ```rail
 function add<T>(a: T, b: T): T {
     return a + b;
@@ -38,13 +39,16 @@ function add<T>(a: T, b: T): T {
 procedure added<T>(a: T, b: T) {
     console.log(typeof add(a, b));
 }
+
+const lambdaAdd = <T>(a: T, b: T) => a + b;
 ```
 В таком случае Rail будет автоматически определять тип данных, который будет использоваться в функции.
 
 ```rail
-console.log(add(1, 2)); //3
-console.log(add(1.0, 2.0)); //3.0
-added("1", "2"); //string
+console.log(add(1, 2)); //3, T стало int
+console.log(add(1.0, 2.0)); //3.0, T стало double
+added("1", "2"); //string, T стало string
+console.log(lambdaAdd(1, 2)); //3, T стало int
 ```
 
 ## Классы с Generic типами
