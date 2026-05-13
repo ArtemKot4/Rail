@@ -26,3 +26,6 @@ procedure main {
     sayHello("John");
 }
 ```
+---
+**Следующая статья**:
+1. [Лямбда-функции](lambda.md)

@@ -46,3 +46,5 @@ procedure say(message: () => string) {
 say(() => "Hello, world!");
 // Saying: Hello, world
 ```
+---
+**Следующая статья**: [Перегрузки](overload.md)

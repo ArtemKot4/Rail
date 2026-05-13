@@ -7,9 +7,7 @@
 - [Основы](basics.md) 🕛
 - [Типы данных](type/intro.md) 🕛
 - [Переменные](variables.md) 🕛
-- [Функции](call/function.md) 🕛
-- [Процедуры](call/procedure.md) 🕛
-- [Лямбды](lambda.md) 🕛
+- [Функции, процедуры, лямбды](call/intro.md) 🕛
 
 - [Классы](object-oriented/class/intro.md) 
 - [Интерфейсы](object-oriented/interface/intro.md) 🕛
