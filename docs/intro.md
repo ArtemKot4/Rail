@@ -7,9 +7,16 @@
 - [Основы](basics.md) 🕛
 - [Типы данных](type/intro.md) 🕛
 - [Переменные](variables.md) 🕛
+- [Коллекции](iterable/collections/intro.md) 🕛
+- [Проверки](condition/intro.md) 🕛 
+- [Циклы](iterable/loop/intro.md) 🕛
+- [Итераторы](iterable/iterator.md) 🕛
 - [Функции, процедуры, лямбды](call/intro.md) 🕛
+- [Модули](module/namespace.md)
 
 - [Классы](object-oriented/class/intro.md) 
 - [Интерфейсы](object-oriented/interface/intro.md) 🕛
 - [Перечисления](object-oriented/enum/intro.md) 🕛
 - [Юниты](object-oriented/unit/intro.md) 🕛
+
+- [Потоки](thread/intro.md)

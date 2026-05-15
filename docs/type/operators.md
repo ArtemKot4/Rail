@@ -86,7 +86,8 @@ console.log(mark satisfies john); //true, потому что mark соотве�
 
 ## Остальные операторы
 ### typeof
-Возвращает тип данных значения в виде строки.
+#### Вне типа
+Возвращает строковое название типа данных.
 
 Синтаксис:
 ```rail
@@ -98,4 +99,19 @@ typeof значение
 console.log(typeof 1); //int
 console.log(typeof "1"); //string
 console.log(typeof true); //boolean
+```
+
+#### В объявлении типа
+Возвращает тип данных от значения.
+
+Синтаксис:
+```rail
+typeof <тип_данных>
+```
+
+Примеры использования:
+```rail
+type MyType = typeof 1;
+
+console.log(MyType); //int
 ```

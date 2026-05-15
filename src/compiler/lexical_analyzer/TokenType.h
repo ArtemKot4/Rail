@@ -71,10 +71,11 @@ enum TokenType {
 	// calling
 	THROW,              // throw
 
-	// loops
-		// notation
-	FOR,                // for
-	WHILE,              // while
+	// iterator
+	ITERATOR, //iterator
+		// loop notation
+		FOR,                // for
+		WHILE,              // while
 
 	// operators
 	BREAK,              // break
