@@ -15,19 +15,24 @@ private:
     std::vector<Token> tokens;
 
     char peek(int offset = 1);
-    void advance(int count = 1);
+    char advance(int count = 1);
     void skipWhitespace();
+    void skipComment();
+    void skipMultilineComment();
     bool isDigit(char c);
     bool isWhitespace(char c);
+    bool isValidCurrentChar();
     Token tokenizeNumber();
     Token tokenizeString();
     Token tokenizeIdentifier();
     Token tokenizeKeyword(const std::string& word);
     Token next();
+    Token newToken(TokenType type, std::string text = "");
 
 public:
     LexicalAnalyzer(const std::string& source);
     std::vector<Token> tokenize();
+    std::vector<Token> getTokensCopy();
 };
 
 #endif

@@ -10,6 +10,7 @@ enum TokenType {
 	// operators
 	RETURN,				// return
 	THROWS,				// throws
+	DEFER,				// defer
 
 	// threads
 		// thread notations
@@ -25,6 +26,7 @@ enum TokenType {
 	DELETE,				// delete
 
 	// type data
+	STRUCTURE,			// struct
 	CLASS,				// class
 	INTERFACE, 			// interface
 	ENUMERATION, 		// enumeration
@@ -108,7 +110,7 @@ enum TokenType {
 
 	// arithmetic
 	ASSIGN, 			// =
-	ASSING_NULLABLE,    // ??=
+	ASSIGN_NULLABLE,    // ??=
 	PLUS, 				// +	
 	MINUS, 				// -
 	STAR, 				// *
@@ -168,7 +170,9 @@ enum TokenType {
 
 	// file
 	IMPORT,             // import
-	EXPORT              // export
+	EXPORT,              // export,
+
+	UNSUPPORTED
 };
 
 #endif

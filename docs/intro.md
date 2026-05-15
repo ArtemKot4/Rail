@@ -12,9 +12,10 @@
 - [Циклы](iterable/loop/intro.md) 🕛
 - [Итераторы](iterable/iterator.md) 🕛
 - [Функции, процедуры, лямбды](call/intro.md) 🕛
-- [Модули](module/namespace.md)
+- [Пространства имён](module/namespace.md) 🕛
 
-- [Классы](object-oriented/class/intro.md) 
+- [Структуры](object-oriented/structure/intro.md) 🕛
+- [Классы](object-oriented/class/intro.md) 🕛
 - [Интерфейсы](object-oriented/interface/intro.md) 🕛
 - [Перечисления](object-oriented/enum/intro.md) 🕛
 - [Юниты](object-oriented/unit/intro.md) 🕛
