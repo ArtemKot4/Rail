@@ -16,6 +16,8 @@ private:
 
     char peek(int offset = 1);
     char advance(int count = 1);
+    void throwError(std::string message, std::string reason, int& line, int& column);
+    void throwError(std::string message, std::string reason);
     void skipWhitespace();
     void skipComment();
     void skipMultilineComment();

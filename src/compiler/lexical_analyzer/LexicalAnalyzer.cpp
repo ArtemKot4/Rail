@@ -22,6 +22,10 @@ char LexicalAnalyzer::advance(int count) {
     return result;
 }
 
+void LexicalAnalyzer::throwError(std::string message, std::string reason, int& line, int& column) {
+    //
+}
+
 void LexicalAnalyzer::skipWhitespace() {
     while (isWhitespace(currentChar)) {
         advance();
@@ -103,6 +107,10 @@ Token LexicalAnalyzer::next() {
 
     if(isDigit(letter)) {
         return tokenizeNumber();
+    }
+
+    if (letter == '"') {
+        return tokenizeString();
     }
 
     return newToken(TokenType::UNSUPPORTED);
