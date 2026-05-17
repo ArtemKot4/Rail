@@ -1,15 +1,19 @@
 #include "LexicalAnalyzer.h"
+#include "compiler/RailError.h"
 #include <string>
 #include <unordered_map>
+#include <optional>
+
+LexicalAnalyzer::LexicalAnalyzer(const std::string& code, const std::string& fileName) : code(code), fileName(fileName) {};
 
 char LexicalAnalyzer::peek(int offset) {
     int pos = position + offset;
-    return pos < (int)text.length() ? text[pos] : '\0';
+    return pos < (int)code.length() ? code[pos] : '\0';
 }
 
 char LexicalAnalyzer::advance(int count) {
     char result = '\0';
-    for (int i = 0; i < count; i++) {
+    for(int i = 0; i < count; i++) {
         if(currentChar == '\n') {
             line++;
             column = 1;
@@ -17,19 +21,19 @@ char LexicalAnalyzer::advance(int count) {
             column++;
         }
         position++;
-        result = currentChar = position < (int)text.length() ? text[position] : '\0';
+        result = currentChar = position < (int)code.length() ? code[position] : '\0';
     }
     return result;
-}
-
-void LexicalAnalyzer::throwError(std::string message, std::string reason, int& line, int& column) {
-    //
 }
 
 void LexicalAnalyzer::skipWhitespace() {
     while (isWhitespace(currentChar)) {
         advance();
     }
+}
+
+void LexicalAnalyzer::callError(const std::string& message, int line, int column, const std::string& keyword, const std::string& reason = "") {
+    RailError(code, "LexicalError", message, line, column, keyword, reason, fileName);
 }
 
 bool LexicalAnalyzer::isDigit(char c) {
@@ -65,8 +69,12 @@ Token LexicalAnalyzer::tokenizeNumber() {
             number += current;
         }
         if(current == '.') {
-            number += ".";
-            hasDot = true;
+            if(!hasDot) {
+                number += ".";
+                hasDot = true;
+            } else {
+                callError("Invalid not an integer number", startLine, column, "number cannot have greater than one dot");
+            }
         }
         current = advance();
     } while (isDigit(current) || current == ' ' || !hasDot && current == '.' || (current == '_' && isDigit(peek(1))));
@@ -74,15 +82,40 @@ Token LexicalAnalyzer::tokenizeNumber() {
 }
 
 Token LexicalAnalyzer::tokenizeString() {
-    return Token(line, column, TokenType::STRING_LITERAL, "");
+    int startLine = line;
+    int startColumn = column;
+    std::string string;
+    advance();
+
+    while(isValidCurrentChar() && currentChar != '"') {
+        if(currentChar == '\\') {
+            char nextChar = peek(1);
+            char add = nextChar;
+            if(nextChar == '\\') {
+                add = '\\';
+            }
+            else if(nextChar == 'n') {
+                add = '\n';
+            }
+            else if(nextChar == 't') {
+                add = '\t';
+            }
+            else if(nextChar == 'r') {
+                add = '\r';
+            }
+            string.push_back(add);
+            advance(2);
+            continue;
+        }
+        string.push_back(currentChar);
+        advance();
+    }
+    advance();
+    return Token(startLine, startColumn, TokenType::STRING_LITERAL, string);
 }
 
 Token LexicalAnalyzer::tokenizeIdentifier() {
     return Token(line, column, TokenType::IDENTIFIER, "");
-}
-
-Token LexicalAnalyzer::tokenizeKeyword(const std::string& word) {
-    return Token(line, column, TokenType::KEYWORD, word);
 }
 
 Token LexicalAnalyzer::newToken(TokenType type, std::string text) {
@@ -104,30 +137,32 @@ Token LexicalAnalyzer::next() {
             return next();
         }
     }
-
     if(isDigit(letter)) {
         return tokenizeNumber();
     }
-
-    if (letter == '"') {
+    if(letter == '"') {
         return tokenizeString();
     }
 
-    return newToken(TokenType::UNSUPPORTED);
+    //switch(letter) {
+    //    case '+': {
+    //        return ?;
+    //    }
+    //}
+    //
+    callError("Unexpected token", line - 1, column, std::string(1, letter), "is unknown");
 }
 
-LexicalAnalyzer::LexicalAnalyzer(const std::string& source) : text(source) {}
-
 std::vector<Token> LexicalAnalyzer::tokenize() {
-    if (text.length() == 0) {
+    if(code.length() == 0) {
         return tokens;
     }
-    currentChar = text[0];
+    currentChar = code[0];
 
     do {
         Token token = next();
         tokens.push_back(token);
-        if(token.type == TokenType::UNSUPPORTED || !isValidCurrentChar()) {
+        if(!isValidCurrentChar()) {
             break;
         }
     } while (true);
@@ -155,7 +190,7 @@ static const std::unordered_map<std::string, TokenType> keywords = {
     { "new", TokenType::NEW },
     { "delete", TokenType::DELETE },
 
-    { "struct", TokenType::STRUCTURE },
+    { "structure", TokenType::STRUCTURE },
     { "class", TokenType::CLASS },
     { "interface", TokenType::INTERFACE },
     { "enumeration", TokenType::ENUMERATION },
@@ -217,3 +252,11 @@ static const std::unordered_map<std::string, TokenType> keywords = {
     { "import", TokenType::IMPORT },
     { "export", TokenType::EXPORT }
 };
+
+std::optional<Token> LexicalAnalyzer::getKeywordToken(const std::string& word, int line, int column) {
+    auto it = keywords.find(word);
+    if (it != keywords.end()) {
+        return Token(line, column, it->second, "");
+    }
+    return std::nullopt;
+}

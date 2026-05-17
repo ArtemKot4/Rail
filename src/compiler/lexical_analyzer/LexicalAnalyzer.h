@@ -3,11 +3,13 @@
 
 #include <vector>
 #include <string>
+#include <optional>
+
 #include "Token.h"
 
 class LexicalAnalyzer {
 private:
-    std::string text;
+    std::string code;
     int position = 0;
     int line = 1;
     int column = 1;
@@ -21,18 +23,21 @@ private:
     void skipWhitespace();
     void skipComment();
     void skipMultilineComment();
+    [[noreturn]] void callError(const std::string& message, int line, int column, const std::string& keyword, const std::string& reason);
     bool isDigit(char c);
     bool isWhitespace(char c);
     bool isValidCurrentChar();
     Token tokenizeNumber();
     Token tokenizeString();
     Token tokenizeIdentifier();
-    Token tokenizeKeyword(const std::string& word);
+    std::optional<Token> getKeywordToken(const std::string& word, int line, int column);
     Token next();
     Token newToken(TokenType type, std::string text = "");
 
 public:
-    LexicalAnalyzer(const std::string& source);
+    std::string fileName;
+
+    LexicalAnalyzer(const std::string& code, const std::string& fileName);
     std::vector<Token> tokenize();
     std::vector<Token> getTokensCopy();
 };

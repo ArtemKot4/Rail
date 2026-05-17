@@ -145,7 +145,7 @@ public:
 	}
 
     static void printToken(const Token& token) {
-        std::cout << "Token{ type: " << getTokenTypeName(token.type)
+        std::cout << "Token: { type: " << getTokenTypeName(token.type)
             << ", text: \"" << token.text << "\""
             << ", line: " << token.line
             << ", col: " << token.column << " }" << std::endl;

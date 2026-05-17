@@ -26,7 +26,7 @@ enum TokenType {
 	DELETE,				// delete
 
 	// type data
-	STRUCTURE,			// struct
+	STRUCTURE,			// structure
 	CLASS,				// class
 	INTERFACE, 			// interface
 	ENUMERATION, 		// enumeration
@@ -171,8 +171,6 @@ enum TokenType {
 	// file
 	IMPORT,             // import
 	EXPORT,              // export,
-
-	UNSUPPORTED
 };
 
 #endif

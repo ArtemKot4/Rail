@@ -17,7 +17,7 @@
 - [Структуры](object-oriented/structure/intro.md) 🕛
 - [Классы](object-oriented/class/intro.md) 🕛
 - [Интерфейсы](object-oriented/interface/intro.md) 🕛
-- [Перечисления](object-oriented/enum/intro.md) 🕛
+- [Перечисления](object-oriented/enumeration/intro.md) 🕛
 - [Юниты](object-oriented/unit/intro.md) 🕛
 
-- [Потоки](thread/intro.md)
+- [Потоки](thread/intro.md) 🕛

@@ -1,1 +1,10 @@
+[[run]]:
 cd C:\Rail\build; cmake --build . --config Debug; Debug\railc.exe
+
+[[clear cmake cache]]:
+cd C:\Rail
+rmdir /s /q build
+mkdir build
+cd build
+cmake ..
+cmake --build . --config Debug

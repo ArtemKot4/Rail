@@ -9,8 +9,9 @@
 class CodeField {
 public:	
 	std::vector<std::string> field;
+	int lineStart;
 
-	CodeField(std::string& text, int lineIndex, int lineCount = 1) : text(text), lineIndex(lineIndex + 1), lineCount(lineCount) {
+	CodeField(const std::string& code, int lineIndex, int lineCount = 1) : code(code), lineIndex(lineIndex + 1), lineCount(lineCount) {
 		int startIndex = this->lineIndex - lineCount;
 		start = max(startIndex, 0);
 	};
@@ -20,22 +21,24 @@ public:
 		int lineIndex = start + 1;
 		int width = std::to_string(start + lines.size()).length();
 
-		for (const std::string& line : lines) {
+		for(const std::string& line : lines) {
 			std::string lineIndexString = std::to_string(lineIndex);
 			std::string padding = std::string(width - lineIndexString.length(), ' ');
-			field.push_back(lineIndexString + padding + " | " + line);
+			std::string sidePart = lineIndexString + padding + " | ";
+			lineStart = sidePart.length();
+			field.push_back(sidePart + line);
 			lineIndex++;
 		}
 	}
 
 	void print() {
 		for(const std::string& line : field) {
-			std::cout << line << std::endl;
+			std::cerr << line << std::endl;
 		}
 	}
 
 private:
-	std::string& text;
+	std::string code;
 	int lineCount;
 	int lineIndex;
 	int start;
@@ -47,7 +50,7 @@ private:
 		int currentLineIndex = 0;
 		bool hasEmpty = true;
 
-		for(const char& letter : text + "\n") {
+		for(const char& letter : code + "\n") {
 			if(letter == '\n') {
 				if(currentLineIndex + 1 > lineIndex) {
 					break;
