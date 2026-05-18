@@ -66,7 +66,7 @@ function hasValidInt(arr: int[]): int? {
 }
 ```
 
-### Замена тела инструкцией
+### Выводимый тип возвращает значение
 Это способ создавать функции-предикаты (возвращающие логическое `да` или `нет`, `true` или `false`) с возвращаемым типом с условием.
 
 Синтаксис следующий:
@@ -112,7 +112,7 @@ function readFile(filePath: string) {
 
 Перепишем нашу функцию:
 ```rail
-function readFile(filePath: string): File throws RuntimeException {
+function readFile(filePath: string): File, throws RuntimeException {
     //...чтение, return file
     //если не получилось:
     throw RuntimeError("No such file of directory");
@@ -163,6 +163,91 @@ function readFiles(path: string): File[], throws RuntimeException {
 ```rail
 function foo(): int, throws Error  //с запятой
 procedure bar() throws Error       //без запятой
+```
+## Механизм отложенного вызова: `defer`
+Этот механизм был вдохновлён языком Go, и очень удобен для использования в операциях, которые работают с освобождаемыми ресурсами.
+
+Давайте рассмотрим простой пример без defer.
+```rail
+function getTextFromFile(fileName: string): string, throws RuntimeException {
+    //нам нужно гарантировать, что файл закроется даже если функция выбросит исключение
+    try {
+        const openedFile = //...открыли_файл_через_какой-то_способ(fileName);
+    
+        const text: string = openedFile.getText();
+        openedFile.close(); //закрываем файл перед завершением работы
+        return text;
+    } catch(error) {
+        openedFile.close(); //закрываем файл при выброшенном исключении тоже
+        throw error; //не мешаем исключению быть выброшенным после завершения
+    }
+}
+```
+В данном случае у нас закрывается файл и при исключении, и перед возвратом текста. Это всё, конечно, работает отлично, но можно сделать то же самое намного короче благодяра новому механизму:
+```rail
+function getTextFromFile(fileName: string): string, throws RuntimeException {
+    const openedFile = //...открыли_файл_через_какой-то_способ(fileName);
+    defer openedFile.close();
+
+    const text: string = openedFile.getText();
+    return text;
+}
+```
+И теперь компилятор преобразует код в первый вариант самостоятельно, и будет выглядеть он почти так же:
+
+```rail
+function getTextFromFile(fileName: string): string, throws RuntimeException {
+    const openedFile = //...открыли_файл_через_какой-то_способ(fileName);
+    const __callDefer = () => {
+        openedFile.close();
+    }
+    try {
+        const text: string = openedFile.getText();
+        __callDefer();
+        return text;
+    } catch(error) {
+        __callDefer();
+        throw error;
+    }
+}
+```
+Откуда взялся `__callDefer`? Дело в том, что defer в функции может быть неограниченное количество, и все вызовы внутри будут помещены в `__callDefer` в обратном порядке вызова. Это системная функция, вставляемая компилятором для сокращения кода большого количества отложенных выполнений, работающая на любом бекенде.
+
+**Важно!** Если ваша функция или процедура не способна выбросить исключение: не использует `throws`, конструкция `try-catch` не будет добавлена.
+
+**Тоже важно!** defer регистрируется только после успешного выполнения кода до него. Если исключение произошло до регистрации defer, отложенный вызов не произойдёт.
+
+### Синтаксис defer
+Есть несколько способов использовать `defer`, в зависимости от того, один вызов нужно отложить или какое-то количество операций.
+1.  ```rail
+    procedure logDefer() {
+        defer console.log("world");
+        defer console.log("hello");
+
+        console.log("Тексты defer'ов: ")
+    }
+
+    logDefer();
+    //Тексты defer'ов:
+    //hello
+    //world
+    ```
+
+2.  ```rail
+    procedure logDefer() {
+        defer {
+            console.log("world");
+            console.log("hello");
+        }
+        console.log("Текст defer'а: ")
+    }
+
+    logDefer();
+    //Текст defer'а:
+    //hello
+    //world
+    ```
+Как мы видим, defer'ы вызываются в обратном порядке, снизу вверх. Причём вызываются действительно в самом конце работы функции.
 
 ## Вызов
 Создадим функцию для примеров:
