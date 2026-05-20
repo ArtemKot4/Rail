@@ -32,8 +32,8 @@ void LexicalAnalyzer::skipWhitespace() {
     }
 }
 
-void LexicalAnalyzer::callError(const std::string& message, int line, int column, const std::string& keyword, const std::string& reason = "") {
-    RailError(code, "LexicalError", message, line, column, keyword, reason, fileName);
+void LexicalAnalyzer::callError(const std::string& message, int line, int column, const std::string& reason, const std::string& keyword = " ") {
+    RailError(code, "LexicalError", message, line, column, reason, keyword, fileName);
 }
 
 bool LexicalAnalyzer::isDigit(char c) {
@@ -77,7 +77,7 @@ Token LexicalAnalyzer::tokenizeNumber() {
             }
         }
         current = advance();
-    } while (isDigit(current) || current == ' ' || !hasDot && current == '.' || (current == '_' && isDigit(peek(1))));
+    } while (isDigit(current) || current == ' ' || current == '.' || (current == '_' && isDigit(peek(1))));
     return Token(startLine, startColumn, TokenType::NUMBER_LITERAL, number);
 }
 
@@ -122,35 +122,248 @@ Token LexicalAnalyzer::newToken(TokenType type, std::string text) {
     return Token(line, column, type, text);
 }
 
-Token LexicalAnalyzer::next() {
-    skipWhitespace();
-    char letter = peek(0);
+std::string LexicalAnalyzer::buildIdentifier() {
+    std::string identifier;
+    char letter = currentChar;
 
-    if(letter == '/') {
-        char letterNext = peek();
-        if(letterNext == '/') {
+    while(std::isalpha(static_cast<unsigned char>(letter)) || isDigit(letter) || letter == '_') {
+        identifier += letter;
+        letter = advance();
+    }
+    return identifier;
+}
+
+std::optional<Token> LexicalAnalyzer::getOperatorToken() {
+    char letter = currentChar;
+    char nextLetter = peek();
+
+    switch(letter) {
+        case ';': {
+            advance();
+            return newToken(TokenType::SEMICOLON);
+        }
+        case ':': {
+            advance();
+            return newToken(TokenType::COLON);
+        }
+        case ',': {
+            advance();
+            return newToken(TokenType::COMMA);
+        }
+        case '.': {
+            advance();
+            return newToken(TokenType::POINT);
+        }
+
+        case '=': {
+            advance();
+            if(nextLetter == '=') {
+                advance();
+                return newToken(TokenType::EQUAL_EQUAL);
+            }
+            if(nextLetter == '>') {
+                advance();
+                return newToken(TokenType::FAT_ARROW);
+            }
+            return newToken(TokenType::ASSIGN);
+        }
+        case '+': {
+            advance();
+            if(nextLetter == '+') {
+                advance();
+                return newToken(TokenType::PLUS_PLUS);
+            }
+            if(nextLetter == '=') {
+                advance();
+                return newToken(TokenType::PLUS_ASSIGN);
+            }
+            return newToken(TokenType::PLUS);
+        }
+        case '-': {
+            advance();
+            if(nextLetter == '-') {
+                advance();
+                return newToken(TokenType::MINUS_MINUS);
+            }
+            if(nextLetter == '=') {
+                advance();
+                return newToken(TokenType::MINUS_ASSIGN);
+            }
+            if(nextLetter == '>') {
+                advance();
+                return newToken(TokenType::ARROW);
+            }
+            return newToken(TokenType::MINUS);
+        }
+        case '/': {
+            advance();
+            if(nextLetter == '=') {
+                advance();
+                return newToken(TokenType::SLASH_ASSIGN);
+            }
+            return newToken(TokenType::SLASH);
+        }
+        case '*': {
+            advance();
+            if(nextLetter == '*') {
+                advance();
+                return newToken(TokenType::STAR_STAR);
+            }
+            if(nextLetter == '=') {
+                advance();
+                return newToken(TokenType::STAR_ASSIGN);
+            }
+            return newToken(TokenType::STAR);
+        }
+        case '%': {
+            advance();
+            if(nextLetter == '=') {
+                advance();
+                return newToken(TokenType::PERCENT_ASSIGN);
+            }
+            return newToken(TokenType::PERCENT);
+        }
+        case '&': {
+            advance();
+            if(nextLetter == '&') {
+                advance();
+                return newToken(TokenType::AND);
+            }
+            return newToken(TokenType::AMPERSAND);
+        }
+        case '|': {
+            advance();
+            if(nextLetter == '|') {
+                advance();
+                return newToken(TokenType::OR);
+            }
+            return newToken(TokenType::PIPE);
+        }
+        case '!': {
+            advance();
+            if(nextLetter == '=') {
+                advance();
+                return newToken(TokenType::NOT_EQUAL);
+            }
+            return newToken(TokenType::EXCLAMATION_MARK);
+        }
+        case '?': {
+            advance();
+            if(nextLetter == '?' && peek(2) == '=') {
+                advance(2);
+                return newToken(TokenType::ASSIGN_NULLABLE);
+            }
+            return newToken(TokenType::QUESTION_MARK);
+        }
+
+        case '(': {
+            advance();
+            return newToken(TokenType::LEFT_PARENTHESIS);
+        }
+        case ')': {
+            advance();
+            return newToken(TokenType::RIGHT_PARENTHESIS);
+        }
+        case '[': {
+            advance();
+            return newToken(TokenType::LEFT_BRACKET);
+        }
+        case ']': {
+            advance();
+            return newToken(TokenType::RIGHT_BRACKET);
+        }
+        case '{': {
+            advance();
+            return newToken(TokenType::LEFT_BRACE);
+        }
+        case '}': {
+            advance();
+            return newToken(TokenType::RIGHT_BRACE);
+        }
+        case '<': {
+            advance();
+            if(nextLetter == '=') {
+                advance();
+                return newToken(TokenType::LESS_EQUAL);
+            }
+            return newToken(TokenType::LEFT_ANGLE_BRACKET);
+        }
+        case '>': {
+            advance();
+            if(nextLetter == '=') {
+                advance();
+                return newToken(TokenType::GREATER_EQUAL);
+            }
+            return newToken(TokenType::RIGHT_ANGLE_BRACKET);
+        }
+
+        case '^': {
+            advance();
+            return newToken(TokenType::CARET);
+        }
+        case '~': {
+            advance();
+            return newToken(TokenType::TILDE);
+        }
+
+        case '$': {
+            advance();
+            return newToken(TokenType::DOLLAR);
+        }
+        case '@': {
+            advance();
+            return newToken(TokenType::DOG);
+        }
+        case '#': {
+            advance();
+            return newToken(TokenType::HASHTAG);
+        }
+    }
+    return std::nullopt;
+}
+
+std::optional<Token> LexicalAnalyzer::next() {
+    skipWhitespace();
+
+    if(!isValidCurrentChar()) {
+        return std::nullopt;
+    }
+
+    if(currentChar == '/') {
+        char charNext = peek();
+        if(charNext == '/') {
             skipComment();
             return next();
         }
-        if(letterNext == '*') {
+        if(charNext == '*') {
             skipMultilineComment();
             return next();
         }
     }
-    if(isDigit(letter)) {
+    if(isDigit(currentChar)) {
         return tokenizeNumber();
     }
-    if(letter == '"') {
+    if(currentChar == '"') {
         return tokenizeString();
     }
 
-    //switch(letter) {
-    //    case '+': {
-    //        return ?;
-    //    }
-    //}
-    //
-    callError("Unexpected token", line - 1, column, std::string(1, letter), "is unknown");
+    if(std::isalnum(static_cast<unsigned char>(currentChar))) {
+        int startLine = line;
+        int startColumn = column;
+        std::string identifier = buildIdentifier();
+        std::optional<Token> token = getKeywordToken(identifier, line, column);
+        
+        if(token.has_value()) {
+            return token.value();
+        }
+        return newToken(TokenType::IDENTIFIER, identifier);
+    }
+    std::optional<Token> operatorToken = getOperatorToken();
+
+    if(operatorToken.has_value()) {
+        return operatorToken.value();
+    }
+    callError("Unexpected token", line, column, "is unknown", std::string(1, currentChar));
 }
 
 std::vector<Token> LexicalAnalyzer::tokenize() {
@@ -160,11 +373,11 @@ std::vector<Token> LexicalAnalyzer::tokenize() {
     currentChar = code[0];
 
     do {
-        Token token = next();
-        tokens.push_back(token);
-        if(!isValidCurrentChar()) {
+        std::optional<Token> token = next();
+        if(!token.has_value()) {
             break;
         }
+        tokens.push_back(token.value());
     } while (true);
 
     return tokens;
@@ -255,7 +468,7 @@ static const std::unordered_map<std::string, TokenType> keywords = {
 
 std::optional<Token> LexicalAnalyzer::getKeywordToken(const std::string& word, int line, int column) {
     auto it = keywords.find(word);
-    if (it != keywords.end()) {
+    if(it != keywords.end()) {
         return Token(line, column, it->second, "");
     }
     return std::nullopt;

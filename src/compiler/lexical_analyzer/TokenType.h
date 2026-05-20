@@ -92,10 +92,10 @@ enum TokenType {
 		// punctuation
 	LEFT_PARENTHESIS,   // (
 	RIGHT_PARENTHESIS,  // )
-	LEFT_BRACE,         // {
-	RIGHT_BRACE,        // }
 	LEFT_BRACKET,       // [
 	RIGHT_BRACKET,      // ]
+	LEFT_BRACE,         // {
+	RIGHT_BRACE,        // }
 	LEFT_ANGLE_BRACKET, // <
 	RIGHT_ANGLE_BRACKET,// >
 
@@ -130,6 +130,7 @@ enum TokenType {
 
 	PLUS_PLUS,          // ++
 	MINUS_MINUS,        // --
+	STAR_STAR,			// **
 
 	// logical
 
@@ -140,8 +141,8 @@ enum TokenType {
 	LESS_EQUAL,         // <=
 	GREATER_EQUAL,      // >=
 
-	AMPERSAND_AMPERSAND,// &&
-	PIPE_PIPE,          // ||
+	AND,// &&
+	OR,          // ||
 
 	// object
 	ELLIPSIS,           // ...

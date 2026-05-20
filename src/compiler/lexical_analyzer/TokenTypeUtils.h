@@ -112,8 +112,8 @@ public:
             case TokenType::LESS_EQUAL: return "LESS_EQUAL";
             case TokenType::GREATER_EQUAL: return "GREATER_EQUAL";
 
-            case TokenType::AMPERSAND_AMPERSAND: return "AMPERSAND_AMPERSAND";
-            case TokenType::PIPE_PIPE: return "PIPE_PIPE";
+            case TokenType::AND: return "AND";
+            case TokenType::OR: return "OR";
 
             case TokenType::ELLIPSIS: return "ELLIPSIS";
             case TokenType::ARROW: return "ARROW";

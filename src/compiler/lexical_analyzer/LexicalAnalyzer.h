@@ -11,11 +11,12 @@ class LexicalAnalyzer {
 private:
     std::string code;
     int position = 0;
-    int line = 1;
+    int line = 0;
     int column = 1;
     char currentChar = '\0';
     std::vector<Token> tokens;
 
+    std::string buildIdentifier();
     char peek(int offset = 1);
     char advance(int count = 1);
     void throwError(std::string message, std::string reason, int& line, int& column);
@@ -27,11 +28,13 @@ private:
     bool isDigit(char c);
     bool isWhitespace(char c);
     bool isValidCurrentChar();
+    bool isEnd();
     Token tokenizeNumber();
     Token tokenizeString();
     Token tokenizeIdentifier();
+    std::optional<Token> getOperatorToken();
     std::optional<Token> getKeywordToken(const std::string& word, int line, int column);
-    Token next();
+    std::optional<Token> next();
     Token newToken(TokenType type, std::string text = "");
 
 public:

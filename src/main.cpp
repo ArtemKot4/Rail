@@ -4,10 +4,9 @@
 
 int main() {
     std::string text = R"(
-1000.0.4
+1000.0
         "hello\"world\"\n"
         // Пример кода на Rail для тестирования лексера
-
         // Комментарий
         let name: string = "Rail";
         const version: int = 1;
@@ -31,7 +30,6 @@ int main() {
             const sum = arr.reduce((acc, x) => acc + x, 0);
             console.log("Sum:", sum);
         }
-
         main();
     )"; //thank you deep seek for example of code
 
