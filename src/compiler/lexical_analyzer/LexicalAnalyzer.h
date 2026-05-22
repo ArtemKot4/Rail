@@ -9,7 +9,6 @@
 
 class LexicalAnalyzer {
 private:
-    std::string code;
     int position = 0;
     int line = 0;
     int column = 1;
@@ -39,6 +38,7 @@ private:
 
 public:
     std::string fileName;
+    std::string code;
 
     LexicalAnalyzer(const std::string& code, const std::string& fileName);
     std::vector<Token> tokenize();

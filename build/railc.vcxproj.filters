@@ -4,6 +4,9 @@
     <ClCompile Include="C:\Rail\src\compiler\lexical_analyzer\LexicalAnalyzer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Rail\src\compiler\syntax_analyzer\SyntaxAnalyzer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Rail\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

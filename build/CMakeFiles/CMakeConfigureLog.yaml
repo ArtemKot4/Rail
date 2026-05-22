@@ -35,1201 +35,6 @@ events:
     found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX86\\x86"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x86"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x86"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\Tools\\"
-        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files (x86)\\ZeroTier\\One\\"
-        - "C:\\Program Files\\WireGuard\\"
-        - "C:\\Program Files\\nodejs\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\GitHubDesktop\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Roaming\\npm"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\PrivateAssemblies\\runtimes\\win-x64\\native"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\bin"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
-      ENV{INCLUDE}:
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\ATLMFC\\include"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Auxiliary\\VS\\include"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\ucrt"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\um"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\shared"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\winrt"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\cppwinrt"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler:  
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      0
-      Версия MSBuild 18.5.4+cb4e32d21 для .NET Framework
-      Сборка начата 09.05.2026 22:20:54.
-      
-      Проект "C:\\Rail\\build\\CMakeFiles\\4.3.2\\CompilerIdC\\CompilerIdC.vcxproj" в узле 1 (целевые объекты по умолчанию).
-      PrepareForBuild:
-        Создание каталога "Debug\\".
-        Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
-        Создание каталога "Debug\\CompilerIdC.tlog\\".
-      InitializeBuildStatus:
-        Создание "Debug\\CompilerIdC.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
-        Обращение к "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
-      ClCompile:
-        C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc145.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
-        CMakeCCompilerId.c
-      Link:
-        C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
-        CompilerIdC.vcxproj -> C:\\Rail\\build\\CMakeFiles\\4.3.2\\CompilerIdC\\CompilerIdC.exe
-      PostBuildEvent:
-        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
-        :VCEnd
-        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\Hostx64\\x64\\cl.exe
-      FinalizeBuildStatus:
-        Файл "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" удаляется.
-        Обращение к "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
-      Сборка проекта "C:\\Rail\\build\\CMakeFiles\\4.3.2\\CompilerIdC\\CompilerIdC.vcxproj" завершена (целевые объекты по умолчанию).
-      
-      Сборка успешно завершена.
-          Предупреждений: 0
-          Ошибок: 0
-      
-      Прошло времени 00:00:00.79
-      
-      
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
-      
-      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
-      
-      The C compiler identification is MSVC, found in:
-        C:/Rail/build/CMakeFiles/4.3.2/CompilerIdC/CompilerIdC.exe
-      
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "_CMAKE_TOOL_WITH_PATH"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "link"
-    candidate_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx86/x86/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/"
-      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/Tools/"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files (x86)/ZeroTier/One/"
-      - "C:/Program Files/WireGuard/"
-      - "C:/Program Files/nodejs/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/Scripts/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Launcher/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Roaming/npm/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/PrivateAssemblies/runtimes/win-x64/native/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/Llvm/bin/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/vcpkg/"
-    searched_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.com"
-    found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.exe"
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX86\\x86"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x86"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x86"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\Tools\\"
-        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files (x86)\\ZeroTier\\One\\"
-        - "C:\\Program Files\\WireGuard\\"
-        - "C:\\Program Files\\nodejs\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\GitHubDesktop\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Roaming\\npm"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\PrivateAssemblies\\runtimes\\win-x64\\native"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\bin"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "_CMAKE_TOOL_WITH_PATH"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "lld-link"
-    candidate_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx86/x86/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/"
-      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/Tools/"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files (x86)/ZeroTier/One/"
-      - "C:/Program Files/WireGuard/"
-      - "C:/Program Files/nodejs/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/Scripts/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Launcher/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Roaming/npm/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/PrivateAssemblies/runtimes/win-x64/native/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/Llvm/bin/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/vcpkg/"
-    searched_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx86/x86/lld-link.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx86/x86/lld-link.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx86/x86/lld-link"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/lld-link.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/lld-link.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/lld-link"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/lld-link.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/lld-link.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/lld-link"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/lld-link.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/lld-link.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/lld-link"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/lld-link.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/lld-link.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/lld-link"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/lld-link.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/lld-link.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/lld-link"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/lld-link.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/lld-link.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/lld-link"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/lld-link.com"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/lld-link.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/lld-link"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/lld-link.com"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/lld-link.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/lld-link"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/lld-link.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/lld-link.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/lld-link"
-      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/lld-link.com"
-      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/lld-link.exe"
-      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/lld-link"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/lld-link.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/lld-link.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/lld-link"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/Tools/lld-link.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/Tools/lld-link.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/Tools/lld-link"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link.com"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link.exe"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link"
-      - "C:/Windows/System32/lld-link.com"
-      - "C:/Windows/System32/lld-link.exe"
-      - "C:/Windows/System32/lld-link"
-      - "C:/Windows/lld-link.com"
-      - "C:/Windows/lld-link.exe"
-      - "C:/Windows/lld-link"
-      - "C:/Windows/System32/wbem/lld-link.com"
-      - "C:/Windows/System32/wbem/lld-link.exe"
-      - "C:/Windows/System32/wbem/lld-link"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
-      - "C:/Windows/System32/OpenSSH/lld-link.com"
-      - "C:/Windows/System32/OpenSSH/lld-link.exe"
-      - "C:/Windows/System32/OpenSSH/lld-link"
-      - "C:/Program Files (x86)/ZeroTier/One/lld-link.com"
-      - "C:/Program Files (x86)/ZeroTier/One/lld-link.exe"
-      - "C:/Program Files (x86)/ZeroTier/One/lld-link"
-      - "C:/Program Files/WireGuard/lld-link.com"
-      - "C:/Program Files/WireGuard/lld-link.exe"
-      - "C:/Program Files/WireGuard/lld-link"
-      - "C:/Program Files/nodejs/lld-link.com"
-      - "C:/Program Files/nodejs/lld-link.exe"
-      - "C:/Program Files/nodejs/lld-link"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
-      - "C:/Program Files/CMake/bin/lld-link.com"
-      - "C:/Program Files/CMake/bin/lld-link.exe"
-      - "C:/Program Files/CMake/bin/lld-link"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/Scripts/lld-link.com"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/Scripts/lld-link.exe"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/Scripts/lld-link"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/lld-link.com"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/lld-link.exe"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/lld-link"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Launcher/lld-link.com"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Launcher/lld-link.exe"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Launcher/lld-link"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Microsoft/WindowsApps/lld-link.com"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Microsoft/WindowsApps/lld-link"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/GitHubDesktop/bin/lld-link.com"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/GitHubDesktop/bin/lld-link.exe"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/GitHubDesktop/bin/lld-link"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Roaming/npm/lld-link.com"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Roaming/npm/lld-link.exe"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Roaming/npm/lld-link"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/PrivateAssemblies/runtimes/win-x64/native/lld-link.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/PrivateAssemblies/runtimes/win-x64/native/lld-link.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/PrivateAssemblies/runtimes/win-x64/native/lld-link"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/Llvm/bin/lld-link.com"
-    found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/Llvm/bin/lld-link.exe"
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX86\\x86"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x86"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x86"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\Tools\\"
-        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files (x86)\\ZeroTier\\One\\"
-        - "C:\\Program Files\\WireGuard\\"
-        - "C:\\Program Files\\nodejs\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\GitHubDesktop\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Roaming\\npm"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\PrivateAssemblies\\runtimes\\win-x64\\native"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\bin"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_LINKER"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "link"
-    candidate_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx86/x86/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/"
-      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/Tools/"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files (x86)/ZeroTier/One/"
-      - "C:/Program Files/WireGuard/"
-      - "C:/Program Files/nodejs/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/Scripts/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Launcher/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Roaming/npm/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/PrivateAssemblies/runtimes/win-x64/native/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/Llvm/bin/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/vcpkg/"
-    searched_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.com"
-    found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.exe"
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX86\\x86"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x86"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x86"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\Tools\\"
-        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files (x86)\\ZeroTier\\One\\"
-        - "C:\\Program Files\\WireGuard\\"
-        - "C:\\Program Files\\nodejs\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\GitHubDesktop\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Roaming\\npm"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\PrivateAssemblies\\runtimes\\win-x64\\native"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\bin"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_MT"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "mt"
-    candidate_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx86/x86/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/"
-      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/Tools/"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files (x86)/ZeroTier/One/"
-      - "C:/Program Files/WireGuard/"
-      - "C:/Program Files/nodejs/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/Scripts/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Launcher/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Roaming/npm/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/PrivateAssemblies/runtimes/win-x64/native/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/Llvm/bin/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/vcpkg/"
-    searched_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/mt.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/mt.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/mt"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx86/x86/mt.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx86/x86/mt.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx86/x86/mt"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/mt.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/mt.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/mt"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/mt.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/mt.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/mt"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/mt.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/mt.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/mt"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/mt.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/mt.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/mt"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/mt.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/mt.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/mt"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/mt.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/mt.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/mt"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/mt.com"
-    found: "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/mt.exe"
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX86\\x86"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x86"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x86"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\Tools\\"
-        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files (x86)\\ZeroTier\\One\\"
-        - "C:\\Program Files\\WireGuard\\"
-        - "C:\\Program Files\\nodejs\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\GitHubDesktop\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Roaming\\npm"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\PrivateAssemblies\\runtimes\\win-x64\\native"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\bin"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_AR"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "lib"
-    candidate_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx86/x86/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/"
-      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/Tools/"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files (x86)/ZeroTier/One/"
-      - "C:/Program Files/WireGuard/"
-      - "C:/Program Files/nodejs/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/Scripts/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Launcher/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Roaming/npm/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/PrivateAssemblies/runtimes/win-x64/native/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/Llvm/bin/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/vcpkg/"
-    searched_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lib.com"
-    found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lib.exe"
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX86\\x86"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x86"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x86"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\Tools\\"
-        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files (x86)\\ZeroTier\\One\\"
-        - "C:\\Program Files\\WireGuard\\"
-        - "C:\\Program Files\\nodejs\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\GitHubDesktop\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Roaming\\npm"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\PrivateAssemblies\\runtimes\\win-x64\\native"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\bin"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCXXCompilerId.cpp.in"
-    candidate_directories:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/"
-    found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerId.cpp.in"
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX86\\x86"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x86"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x86"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\Tools\\"
-        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files (x86)\\ZeroTier\\One\\"
-        - "C:\\Program Files\\WireGuard\\"
-        - "C:\\Program Files\\nodejs\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\GitHubDesktop\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Roaming\\npm"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\PrivateAssemblies\\runtimes\\win-x64\\native"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\bin"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
-      ENV{INCLUDE}:
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\include"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\ATLMFC\\include"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Auxiliary\\VS\\include"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\ucrt"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\um"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\shared"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\winrt"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\\\include\\10.0.26100.0\\\\cppwinrt"
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler:  
-      Build flags: 
-      Id flags:  
-      
-      The output was:
-      0
-      Версия MSBuild 18.5.4+cb4e32d21 для .NET Framework
-      Сборка начата 09.05.2026 22:20:55.
-      
-      Проект "C:\\Rail\\build\\CMakeFiles\\4.3.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" в узле 1 (целевые объекты по умолчанию).
-      PrepareForBuild:
-        Создание каталога "Debug\\".
-        Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
-        Создание каталога "Debug\\CompilerIdCXX.tlog\\".
-      InitializeBuildStatus:
-        Создание "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
-        Обращение к "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
-      ClCompile:
-        C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc145.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
-        CMakeCXXCompilerId.cpp
-      Link:
-        C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
-        CompilerIdCXX.vcxproj -> C:\\Rail\\build\\CMakeFiles\\4.3.2\\CompilerIdCXX\\CompilerIdCXX.exe
-      PostBuildEvent:
-        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
-        :VCEnd
-        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\Hostx64\\x64\\cl.exe
-      FinalizeBuildStatus:
-        Файл "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" удаляется.
-        Обращение к "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
-      Сборка проекта "C:\\Rail\\build\\CMakeFiles\\4.3.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" завершена (целевые объекты по умолчанию).
-      
-      Сборка успешно завершена.
-          Предупреждений: 0
-          Ошибок: 0
-      
-      Прошло времени 00:00:00.52
-      
-      
-      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
-      
-      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
-      
-      The CXX compiler identification is MSVC, found in:
-        C:/Rail/build/CMakeFiles/4.3.2/CompilerIdCXX/CompilerIdCXX.exe
-      
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake:592 (enable_language)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake:565 (__windows_compiler_msvc_enable_rc)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCInformation.cmake:48 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_RC_COMPILER"
-    description: "RC compiler"
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "rc"
-    candidate_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx86/x86/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/"
-      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/Tools/"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "C:/Program Files (x86)/ZeroTier/One/"
-      - "C:/Program Files/WireGuard/"
-      - "C:/Program Files/nodejs/"
-      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/Scripts/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Launcher/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Microsoft/WindowsApps/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Microsoft VS Code/bin/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/GitHubDesktop/bin/"
-      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Roaming/npm/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/PrivateAssemblies/runtimes/win-x64/native/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/Llvm/bin/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/vcpkg/"
-      - "C:/Program Files/bin/"
-      - "C:/Program Files/sbin/"
-      - "C:/Program Files/"
-      - "C:/Program Files (x86)/bin/"
-      - "C:/Program Files (x86)/sbin/"
-      - "C:/Program Files (x86)/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files/CMake/sbin/"
-      - "C:/Program Files/CMake/"
-      - "C:/Program Files (x86)/Rail/bin/"
-      - "C:/Program Files (x86)/Rail/sbin/"
-      - "C:/Program Files (x86)/Rail/"
-    searched_directories:
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx86/x86/rc.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx86/x86/rc.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx86/x86/rc"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/rc.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/rc.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/rc"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/rc.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/rc.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/rc"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/rc.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/rc.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/rc"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/rc.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/rc.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/rc"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/rc.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/rc.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/rc"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/rc.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/rc.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/rc"
-      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/rc.com"
-    found: "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/rc.exe"
-    search_context:
-      ENV{PATH}:
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX86\\x86"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\VCPackages"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\bin\\Roslyn"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Team Tools\\DiagnosticsHub\\Collector"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x86"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x86"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\\\MSBuild\\Current\\Bin\\amd64"
-        - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\Tools\\"
-        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files (x86)\\ZeroTier\\One\\"
-        - "C:\\Program Files\\WireGuard\\"
-        - "C:\\Program Files\\nodejs\\"
-        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Launcher\\"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\GitHubDesktop\\bin"
-        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Roaming\\npm"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\PrivateAssemblies\\runtimes\\win-x64\\native"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\bin"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Rail"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/Program Files"
-        - "C:/Program Files (x86)"
-        - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/Rail"
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    checks:
-      - "Detecting C compiler ABI info"
-    directories:
-      source: "C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-gsmah8"
-      binary: "C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-gsmah8"
-    cmakeVariables:
-      CMAKE_CXX_STDLIB_MODULES_JSON: ""
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
-      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-    buildResult:
-      variable: "CMAKE_C_ABI_COMPILED"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-gsmah8'
-        
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ef9a4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
-        Версия MSBuild 18.5.4+cb4e32d21 для .NET Framework
-        Сборка начата 09.05.2026 22:20:56.
-        
-        Проект "C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gsmah8\\cmTC_ef9a4.vcxproj" в узле 1 (целевые объекты по умолчанию).
-        PrepareForBuild:
-          Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
-          Создание каталога "C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gsmah8\\Debug\\".
-          Создание каталога "cmTC_ef9a4.dir\\Debug\\cmTC_ef9a4.tlog\\".
-        InitializeBuildStatus:
-          Создание "cmTC_ef9a4.dir\\Debug\\cmTC_ef9a4.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
-          Обращение к "cmTC_ef9a4.dir\\Debug\\cmTC_ef9a4.tlog\\unsuccessfulbuild".
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_ef9a4.dir\\Debug\\\\" /Fd"cmTC_ef9a4.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
-          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.50.35730 для x64
-          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_ef9a4.dir\\Debug\\\\" /Fd"cmTC_ef9a4.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
-          CMakeCCompilerABI.c
-        Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gsmah8\\Debug\\cmTC_ef9a4.exe" /INCREMENTAL /ILK:"cmTC_ef9a4.dir\\Debug\\cmTC_ef9a4.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-gsmah8/Debug/cmTC_ef9a4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-gsmah8/Debug/cmTC_ef9a4.lib" /MACHINE:X64  /machine:x64 cmTC_ef9a4.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_ef9a4.vcxproj -> C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gsmah8\\Debug\\cmTC_ef9a4.exe
-        FinalizeBuildStatus:
-          Файл "cmTC_ef9a4.dir\\Debug\\cmTC_ef9a4.tlog\\unsuccessfulbuild" удаляется.
-          Обращение к "cmTC_ef9a4.dir\\Debug\\cmTC_ef9a4.tlog\\cmTC_ef9a4.lastbuildstate".
-        Сборка проекта "C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gsmah8\\cmTC_ef9a4.vcxproj" завершена (целевые объекты по умолчанию).
-        
-        Сборка успешно завершена.
-            Предупреждений: 0
-            Ошибок: 0
-        
-        Прошло времени 00:00:00.50
-        
-      exitCode: 0
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Parsed C implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/HostX64/x64/link.exe
-        implicit libs: []
-        implicit objs: []
-        implicit dirs: []
-        implicit fwks: []
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/HostX64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.50.35730.0
-      Copyright (C) Microsoft Corporation.  All rights reserved.
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    checks:
-      - "Detecting CXX compiler ABI info"
-    directories:
-      source: "C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-f5ow2x"
-      binary: "C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-f5ow2x"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
-      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
-      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
-      CMAKE_CXX_STDLIB_MODULES_JSON: ""
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-    buildResult:
-      variable: "CMAKE_CXX_ABI_COMPILED"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-f5ow2x'
-        
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_60d81.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
-        Версия MSBuild 18.5.4+cb4e32d21 для .NET Framework
-        Сборка начата 09.05.2026 22:20:56.
-        
-        Проект "C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f5ow2x\\cmTC_60d81.vcxproj" в узле 1 (целевые объекты по умолчанию).
-        PrepareForBuild:
-          Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
-          Создание каталога "C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f5ow2x\\Debug\\".
-          Создание каталога "cmTC_60d81.dir\\Debug\\cmTC_60d81.tlog\\".
-        InitializeBuildStatus:
-          Создание "cmTC_60d81.dir\\Debug\\cmTC_60d81.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
-          Обращение к "cmTC_60d81.dir\\Debug\\cmTC_60d81.tlog\\unsuccessfulbuild".
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_60d81.dir\\Debug\\\\" /Fd"cmTC_60d81.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
-          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.50.35730 для x64
-          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_60d81.dir\\Debug\\\\" /Fd"cmTC_60d81.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
-          CMakeCXXCompilerABI.cpp
-        Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f5ow2x\\Debug\\cmTC_60d81.exe" /INCREMENTAL /ILK:"cmTC_60d81.dir\\Debug\\cmTC_60d81.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-f5ow2x/Debug/cmTC_60d81.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-f5ow2x/Debug/cmTC_60d81.lib" /MACHINE:X64  /machine:x64 cmTC_60d81.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_60d81.vcxproj -> C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f5ow2x\\Debug\\cmTC_60d81.exe
-        FinalizeBuildStatus:
-          Файл "cmTC_60d81.dir\\Debug\\cmTC_60d81.tlog\\unsuccessfulbuild" удаляется.
-          Обращение к "cmTC_60d81.dir\\Debug\\cmTC_60d81.tlog\\cmTC_60d81.lastbuildstate".
-        Сборка проекта "C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f5ow2x\\cmTC_60d81.vcxproj" завершена (целевые объекты по умолчанию).
-        
-        Сборка успешно завершена.
-            Предупреждений: 0
-            Ошибок: 0
-        
-        Прошло времени 00:00:00.49
-        
-      exitCode: 0
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Parsed CXX implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/HostX64/x64/link.exe
-        implicit libs: []
-        implicit objs: []
-        implicit dirs: []
-        implicit fwks: []
-      
-      
-  -
-    kind: "message-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
-      - "CMakeLists.txt:2 (project)"
-    message: |
-      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/HostX64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.50.35730.0
-      Copyright (C) Microsoft Corporation.  All rights reserved.
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "file"
-    variable: "src_in"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "CMakeCCompilerId.c.in"
-    candidate_directories:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/"
-    found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerId.c.in"
-    search_context:
-      ENV{PATH}:
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX86\\x86"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\VCPackages"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
@@ -1261,13 +66,11 @@ events:
         - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Roaming\\npm"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\PrivateAssemblies\\runtimes\\win-x64\\native"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Rail"
       ENV{INCLUDE}:
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\ATLMFC\\include"
@@ -1287,13 +90,13 @@ events:
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler:  
-      Build flags: /DWIN32;/D_WINDOWS
+      Build flags: 
       Id flags:  
       
       The output was:
       0
       ╨Т╨╡╤А╤Б╨╕╤П MSBuild 18.6.3+84d3e95b4 ╨┤╨╗╤П .NET Framework
-      ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 17.05.2026 20:01:23.
+      ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 22.05.2026 16:00:01.
       
       ╨Я╤А╨╛╨╡╨║╤В "C:\\Rail\\build\\CMakeFiles\\4.3.2\\CompilerIdC\\CompilerIdC.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
       PrepareForBuild:
@@ -1322,7 +125,7 @@ events:
           ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
           ╨Ю╤И╨╕╨▒╨╛╨║: 0
       
-      ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.62
+      ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.68
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -1386,7 +189,6 @@ events:
       - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/GitHubDesktop/bin/"
       - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Roaming/npm/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/PrivateAssemblies/runtimes/win-x64/native/"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/Llvm/bin/"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
@@ -1428,13 +230,11 @@ events:
         - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Roaming\\npm"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\PrivateAssemblies\\runtimes\\win-x64\\native"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Rail"
   -
     kind: "find-v1"
     backtrace:
@@ -1489,7 +289,6 @@ events:
       - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/GitHubDesktop/bin/"
       - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Roaming/npm/"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/PrivateAssemblies/runtimes/win-x64/native/"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/Llvm/bin/"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
@@ -1592,9 +391,6 @@ events:
       - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Roaming/npm/lld-link.com"
       - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Roaming/npm/lld-link.exe"
       - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Roaming/npm/lld-link"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/PrivateAssemblies/runtimes/win-x64/native/lld-link.com"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/PrivateAssemblies/runtimes/win-x64/native/lld-link.exe"
-      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/PrivateAssemblies/runtimes/win-x64/native/lld-link"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/Llvm/bin/lld-link.com"
     found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/Llvm/bin/lld-link.exe"
     search_context:
@@ -1630,13 +426,329 @@ events:
         - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Roaming\\npm"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\PrivateAssemblies\\runtimes\\win-x64\\native"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Rail"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx86/x86/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/"
+      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/Tools/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/ZeroTier/One/"
+      - "C:/Program Files/WireGuard/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Roaming/npm/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/Llvm/bin/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/vcpkg/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX86\\x86"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Team Tools\\DiagnosticsHub\\Collector"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x86"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x86"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\Tools\\"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\ZeroTier\\One\\"
+        - "C:\\Program Files\\WireGuard\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\bin"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx86/x86/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/"
+      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/Tools/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/ZeroTier/One/"
+      - "C:/Program Files/WireGuard/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Roaming/npm/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/Llvm/bin/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/vcpkg/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/mt.com"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/mt.exe"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/mt"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx86/x86/mt.com"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx86/x86/mt.exe"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx86/x86/mt"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/mt.com"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/mt.exe"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/mt"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/mt.com"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/mt.exe"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/mt"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/mt.com"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/mt.exe"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/mt"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/mt.com"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/mt.exe"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/mt"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/mt.com"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/mt.exe"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/mt"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/mt.com"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/mt.exe"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/mt"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/mt.com"
+    found: "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/mt.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX86\\x86"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Team Tools\\DiagnosticsHub\\Collector"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x86"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x86"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\Tools\\"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\ZeroTier\\One\\"
+        - "C:\\Program Files\\WireGuard\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\bin"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx86/x86/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/"
+      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/Tools/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/ZeroTier/One/"
+      - "C:/Program Files/WireGuard/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Roaming/npm/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/Llvm/bin/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/vcpkg/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lib.com"
+    found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX86\\x86"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Team Tools\\DiagnosticsHub\\Collector"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x86"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x86"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\Tools\\"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\ZeroTier\\One\\"
+        - "C:\\Program Files\\WireGuard\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\bin"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
   -
     kind: "find-v1"
     backtrace:
@@ -1695,13 +807,11 @@ events:
         - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\GitHubDesktop\\bin"
         - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Roaming\\npm"
-        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\PrivateAssemblies\\runtimes\\win-x64\\native"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Rail"
       ENV{INCLUDE}:
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\include"
         - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\ATLMFC\\include"
@@ -1721,13 +831,13 @@ events:
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler:  
-      Build flags: /DWIN32;/D_WINDOWS;/EHsc
+      Build flags: 
       Id flags:  
       
       The output was:
       0
       ╨Т╨╡╤А╤Б╨╕╤П MSBuild 18.6.3+84d3e95b4 ╨┤╨╗╤П .NET Framework
-      ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 17.05.2026 20:01:24.
+      ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 22.05.2026 16:00:03.
       
       ╨Я╤А╨╛╨╡╨║╤В "C:\\Rail\\build\\CMakeFiles\\4.3.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
       PrepareForBuild:
@@ -1756,7 +866,7 @@ events:
           ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
           ╨Ю╤И╨╕╨▒╨╛╨║: 0
       
-      ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.59
+      ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.58
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -1767,6 +877,145 @@ events:
         C:/Rail/build/CMakeFiles/4.3.2/CompilerIdCXX/CompilerIdCXX.exe
       
   -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake:592 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake:565 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCInformation.cmake:48 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx86/x86/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x86/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/"
+      - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/Tools/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/ZeroTier/One/"
+      - "C:/Program Files/WireGuard/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/Scripts/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/\u0410\u0440\u0442\u0451\u043c/AppData/Roaming/npm/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/Llvm/bin/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/vcpkg/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/Rail/bin/"
+      - "C:/Program Files (x86)/Rail/sbin/"
+      - "C:/Program Files (x86)/Rail/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx86/x86/rc.com"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx86/x86/rc.exe"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx86/x86/rc"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/rc.com"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/rc.exe"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/VC/vcpackages/rc"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/rc.com"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/rc.exe"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TestWindow/rc"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/rc.com"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/rc.exe"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team Explorer/rc"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/rc.com"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/rc.exe"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/Roslyn/rc"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/rc.com"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/rc.exe"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Team Tools/DiagnosticsHub/Collector/rc"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/rc.com"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/rc.exe"
+      - "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/Extensions/Microsoft/CodeCoverage.Console/rc"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/rc.com"
+    found: "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x86/rc.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX86\\x86"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\VCPackages"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\bin\\Roslyn"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Team Tools\\DiagnosticsHub\\Collector"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\Extensions\\Microsoft\\CodeCoverage.Console"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\\\x86"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\\\x86"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\\\MSBuild\\Current\\Bin\\amd64"
+        - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\Tools\\"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\ZeroTier\\One\\"
+        - "C:\\Program Files\\WireGuard\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Python314\\"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\\u0410\u0440\u0442\u0451\u043c\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\Llvm\\bin"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
+        - "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\vcpkg"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Rail"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/Rail"
+  -
     kind: "try_compile-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
@@ -1775,8 +1024,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-1g1g12"
-      binary: "C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-1g1g12"
+      source: "C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-2b9ca8"
+      binary: "C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-2b9ca8"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
@@ -1786,39 +1035,39 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-1g1g12'
+        Change Dir: 'C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-2b9ca8'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d4b6e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_05462.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         ╨Т╨╡╤А╤Б╨╕╤П MSBuild 18.6.3+84d3e95b4 ╨┤╨╗╤П .NET Framework
-        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 17.05.2026 20:01:25.
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 22.05.2026 16:00:04.
         
-        ╨Я╤А╨╛╨╡╨║╤В "C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1g1g12\\cmTC_d4b6e.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        ╨Я╤А╨╛╨╡╨║╤В "C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2b9ca8\\cmTC_05462.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
         PrepareForBuild:
           ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
-          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1g1g12\\Debug\\".
-          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_d4b6e.dir\\Debug\\cmTC_d4b6e.tlog\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2b9ca8\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_05462.dir\\Debug\\cmTC_05462.tlog\\".
         InitializeBuildStatus:
-          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_d4b6e.dir\\Debug\\cmTC_d4b6e.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
-          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_d4b6e.dir\\Debug\\cmTC_d4b6e.tlog\\unsuccessfulbuild".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_05462.dir\\Debug\\cmTC_05462.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_05462.dir\\Debug\\cmTC_05462.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_d4b6e.dir\\Debug\\\\" /Fd"cmTC_d4b6e.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_05462.dir\\Debug\\\\" /Fd"cmTC_05462.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36243 for x64
           (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_d4b6e.dir\\Debug\\\\" /Fd"cmTC_d4b6e.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_05462.dir\\Debug\\\\" /Fd"cmTC_05462.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1g1g12\\Debug\\cmTC_d4b6e.exe" /INCREMENTAL /ILK:"cmTC_d4b6e.dir\\Debug\\cmTC_d4b6e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-1g1g12/Debug/cmTC_d4b6e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-1g1g12/Debug/cmTC_d4b6e.lib" /MACHINE:X64  /machine:x64 cmTC_d4b6e.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_d4b6e.vcxproj -> C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1g1g12\\Debug\\cmTC_d4b6e.exe
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2b9ca8\\Debug\\cmTC_05462.exe" /INCREMENTAL /ILK:"cmTC_05462.dir\\Debug\\cmTC_05462.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-2b9ca8/Debug/cmTC_05462.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-2b9ca8/Debug/cmTC_05462.lib" /MACHINE:X64  /machine:x64 cmTC_05462.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_05462.vcxproj -> C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2b9ca8\\Debug\\cmTC_05462.exe
         FinalizeBuildStatus:
-          ╨д╨░╨╣╨╗ "cmTC_d4b6e.dir\\Debug\\cmTC_d4b6e.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
-          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_d4b6e.dir\\Debug\\cmTC_d4b6e.tlog\\cmTC_d4b6e.lastbuildstate".
-        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1g1g12\\cmTC_d4b6e.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+          ╨д╨░╨╣╨╗ "cmTC_05462.dir\\Debug\\cmTC_05462.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_05462.dir\\Debug\\cmTC_05462.tlog\\cmTC_05462.lastbuildstate".
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2b9ca8\\cmTC_05462.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
         
         ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
             ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
             ╨Ю╤И╨╕╨▒╨╛╨║: 0
         
-        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.53
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.58
         
       exitCode: 0
   -
@@ -1858,8 +1107,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-m9d7w9"
-      binary: "C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-m9d7w9"
+      source: "C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-k8z8wl"
+      binary: "C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-k8z8wl"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1870,39 +1119,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-m9d7w9'
+        Change Dir: 'C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-k8z8wl'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2658e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_cdb2d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         ╨Т╨╡╤А╤Б╨╕╤П MSBuild 18.6.3+84d3e95b4 ╨┤╨╗╤П .NET Framework
-        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 17.05.2026 20:01:26.
+        ╨б╨▒╨╛╤А╨║╨░ ╨╜╨░╤З╨░╤В╨░ 22.05.2026 16:00:05.
         
-        ╨Я╤А╨╛╨╡╨║╤В "C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m9d7w9\\cmTC_2658e.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+        ╨Я╤А╨╛╨╡╨║╤В "C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k8z8wl\\cmTC_cdb2d.vcxproj" ╨▓ ╤Г╨╖╨╗╨╡ 1 (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
         PrepareForBuild:
           ╨б╤В╤А╤Г╨║╤В╤Г╤А╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╨▓╤Л╨▓╨╛╨┤ ╨▓╨║╨╗╤О╤З╨╡╨╜. ╨д╨╛╤А╨╝╨░╤В╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ ╨┤╨╕╨░╨│╨╜╨╛╤Б╤В╨╕╨║╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤В╨╛╤А╨░ ╨▒╤Г╨┤╨╡╤В ╨╛╤В╤А╨░╨╢╨░╤В╤М ╨╕╨╡╤А╨░╤А╤Е╨╕╤О ╨╛╤И╨╕╨▒╨╛╨║. ╨Я╨╛╨┤╤А╨╛╨▒╨╜╨╡╨╡ ╤Б╨╝. https://aka.ms/cpp/structured-output.
-          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m9d7w9\\Debug\\".
-          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_2658e.dir\\Debug\\cmTC_2658e.tlog\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k8z8wl\\Debug\\".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ ╨║╨░╤В╨░╨╗╨╛╨│╨░ "cmTC_cdb2d.dir\\Debug\\cmTC_cdb2d.tlog\\".
         InitializeBuildStatus:
-          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_2658e.dir\\Debug\\cmTC_2658e.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
-          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_2658e.dir\\Debug\\cmTC_2658e.tlog\\unsuccessfulbuild".
+          ╨б╨╛╨╖╨┤╨░╨╜╨╕╨╡ "cmTC_cdb2d.dir\\Debug\\cmTC_cdb2d.tlog\\unsuccessfulbuild", ╤В╨░╨║ ╨║╨░╨║ ╨▒╤Л╨╗╨╛ ╨╖╨░╨┤╨░╨╜╨╛ "AlwaysCreate".
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_cdb2d.dir\\Debug\\cmTC_cdb2d.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_2658e.dir\\Debug\\\\" /Fd"cmTC_2658e.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_cdb2d.dir\\Debug\\\\" /Fd"cmTC_cdb2d.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36243 for x64
           (C) ╨Ъ╨╛╤А╨┐╨╛╤А╨░╤Ж╨╕╤П ╨Ь╨░╨╣╨║╤А╨╛╤Б╨╛╤Д╤В (Microsoft Corporation).  ╨Т╤Б╨╡ ╨┐╤А╨░╨▓╨░ ╨╖╨░╤Й╨╕╤Й╨╡╨╜╤Л.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_2658e.dir\\Debug\\\\" /Fd"cmTC_2658e.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_cdb2d.dir\\Debug\\\\" /Fd"cmTC_cdb2d.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m9d7w9\\Debug\\cmTC_2658e.exe" /INCREMENTAL /ILK:"cmTC_2658e.dir\\Debug\\cmTC_2658e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-m9d7w9/Debug/cmTC_2658e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-m9d7w9/Debug/cmTC_2658e.lib" /MACHINE:X64  /machine:x64 cmTC_2658e.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_2658e.vcxproj -> C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m9d7w9\\Debug\\cmTC_2658e.exe
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k8z8wl\\Debug\\cmTC_cdb2d.exe" /INCREMENTAL /ILK:"cmTC_cdb2d.dir\\Debug\\cmTC_cdb2d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-k8z8wl/Debug/cmTC_cdb2d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Rail/build/CMakeFiles/CMakeScratch/TryCompile-k8z8wl/Debug/cmTC_cdb2d.lib" /MACHINE:X64  /machine:x64 cmTC_cdb2d.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_cdb2d.vcxproj -> C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k8z8wl\\Debug\\cmTC_cdb2d.exe
         FinalizeBuildStatus:
-          ╨д╨░╨╣╨╗ "cmTC_2658e.dir\\Debug\\cmTC_2658e.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
-          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_2658e.dir\\Debug\\cmTC_2658e.tlog\\cmTC_2658e.lastbuildstate".
-        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m9d7w9\\cmTC_2658e.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
+          ╨д╨░╨╣╨╗ "cmTC_cdb2d.dir\\Debug\\cmTC_cdb2d.tlog\\unsuccessfulbuild" ╤Г╨┤╨░╨╗╤П╨╡╤В╤Б╤П.
+          ╨Ю╨▒╤А╨░╤Й╨╡╨╜╨╕╨╡ ╨║ "cmTC_cdb2d.dir\\Debug\\cmTC_cdb2d.tlog\\cmTC_cdb2d.lastbuildstate".
+        ╨б╨▒╨╛╤А╨║╨░ ╨┐╤А╨╛╨╡╨║╤В╨░ "C:\\Rail\\build\\CMakeFiles\\CMakeScratch\\TryCompile-k8z8wl\\cmTC_cdb2d.vcxproj" ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░ (╤Ж╨╡╨╗╨╡╨▓╤Л╨╡ ╨╛╨▒╤К╨╡╨║╤В╤Л ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О).
         
         ╨б╨▒╨╛╤А╨║╨░ ╤Г╤Б╨┐╨╡╤И╨╜╨╛ ╨╖╨░╨▓╨╡╤А╤И╨╡╨╜╨░.
             ╨Я╤А╨╡╨┤╤Г╨┐╤А╨╡╨╢╨┤╨╡╨╜╨╕╨╣: 0
             ╨Ю╤И╨╕╨▒╨╛╨║: 0
         
-        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.54
+        ╨Я╤А╨╛╤И╨╗╨╛ ╨▓╤А╨╡╨╝╨╡╨╜╨╕ 00:00:00.56
         
       exitCode: 0
   -

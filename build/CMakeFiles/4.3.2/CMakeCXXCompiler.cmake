@@ -26,11 +26,11 @@ set(CMAKE_CXX_COMPILER_ARCHITECTURE_ID "x64")
 set(MSVC_CXX_ARCHITECTURE_ID x64)
 
 
-set(CMAKE_AR "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lib.exe")
+set(CMAKE_AR "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lib.exe")
 set(CMAKE_CXX_COMPILER_AR "")
 set(CMAKE_RANLIB ":")
 set(CMAKE_CXX_COMPILER_RANLIB "")
-set(CMAKE_LINKER "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.exe")
+set(CMAKE_LINKER "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.exe")
 set(CMAKE_LINKER_LINK "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.exe")
 set(CMAKE_LINKER_LLD "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/Llvm/bin/lld-link.exe")
 set(CMAKE_CXX_COMPILER_LINKER "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/HostX64/x64/link.exe")
