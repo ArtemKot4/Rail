@@ -9,7 +9,6 @@ find_package(LLVM REQUIRED CONFIG)
 
 file(GLOB_RECURSE SOURCES "src/*.cpp" "src/*.c")
 add_executable(railc ${SOURCES})
-
 target_include_directories(railc PRIVATE 
     ${LLVM_INCLUDE_DIRS}
     "src"

@@ -18,6 +18,8 @@ public:
     Token(int line, int column, TokenType type)
         : line(line), column(column), type(type), text("") {
     }
+
+    Token() = default;
 };
 
 #endif

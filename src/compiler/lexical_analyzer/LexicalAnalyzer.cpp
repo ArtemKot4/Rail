@@ -384,7 +384,7 @@ std::vector<Token> LexicalAnalyzer::tokenize() {
 }
 
 std::vector<Token> LexicalAnalyzer::getTokensCopy() {
-    return std::vector(tokens);
+    return tokens;
 }
 
 static const std::unordered_map<std::string, TokenType> keywords = {
@@ -422,6 +422,7 @@ static const std::unordered_map<std::string, TokenType> keywords = {
 
     { "satisfies", TokenType::SATISFIES },
     { "extends", TokenType::EXTENDS },
+    { "super", TokenType::SUPER },
     { "implements", TokenType::IMPLEMENTS },
     { "typeof", TokenType::TYPEOF },
 

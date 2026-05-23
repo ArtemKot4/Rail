@@ -40,3 +40,16 @@ bool SyntaxAnalyzer::expect(TokenType type, int offset, const std::string& messa
 [[noreturn]] void SyntaxAnalyzer::callError(const std::string& message, int line, int column, const std::string& keyword, const std::string& reason) {
 	RailError(lexicalAnalyzer.code, "SyntaxError", message, line, column, reason, keyword, lexicalAnalyzer.fileName);
 }
+
+bool SyntaxAnalyzer::hasToken() {
+	return position < tokens.size();
+}
+
+std::unique_ptr<BlockStatement> SyntaxAnalyzer::buildAST() {
+	auto block = std::make_unique<BlockStatement>(0, 0);
+	
+	while(hasToken()) {
+		
+	}
+	return block;
+}

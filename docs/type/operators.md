@@ -7,28 +7,60 @@ Rail предлагает несколько нестандартных опер
 ### extends-проверки
 Это аналог instanceof из Java, но работающий только с [классами](..\object-oriented/class/intro.md), [юнитами](..\object-oriented/unit/intro.md) и [перечислениями](..\object-oriented/enum/intro.md)
 
+Такие проверки проверяют, что объект является наследником выше перечисленного (для примеров класса), либо же что класс является наследником. 
+
 Синтаксис:
 ```rail
-значение extends классы_или_юниты
+значение extends класс
 ```
 
 Примеры использования:
-```rail
-class User {
-    public constructor(
-        public name: string;
-        public age: int;
-    ) {}
-}
+1. Проверяем, что объект наследник:
+    ```rail
+    class User {
+        public constructor(
+            public name: string;
+            public age: int;
+        ) {}
+    }
 
 const john: User = new User(name="John", age=30); 
 
 console.log(john extends User); //true
 ```
 
-### implements-проверки
-То же самое, что и extends, но **только для интерфейсов**.
+2. Проверяем, что класс наследник:
+```rail
+    class User {
+        public constructor(
+            public name: string;
+            public age: int;
+        ) {}
+    }
 
+    class Admin extends User {
+        public constructor(public protectionLevel: string, name: string, age: int) {
+            super(name, age);
+        }
+    }
+
+const john: User = new User(name="John", age=30); 
+
+console.log(Admin extends User); //true
+```
+
+### super-проверки
+Проверяет, является ли один класс прямым родителем другого. В таких проверках сравнение объектов недопустимо.
+
+```rail
+class Animal { }
+class Mammal extends Animal { }
+class Dog extends Mammal { }
+
+console.log(Dog super Mammal);   // true
+console.log(Dog super Animal);   // false
+
+### implements-проверки
 Работает только с теми значениями, которые являются реализацией интерфейсов.
 
 Синтаксис:

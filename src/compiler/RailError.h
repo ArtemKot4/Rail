@@ -4,7 +4,7 @@
 #include "lexical_analyzer/TokenType.h"
 #include <string>
 
-[[noreturn]] void RailError(const std::string& code, const std::string& type, const std::string& message, int line, int column, const std::string& reason, const std::string& keyword, const std::string& fileName) {
+[[noreturn]] inline void RailError(const std::string& code, const std::string& type, const std::string& message, int line, int column, const std::string& reason, const std::string& keyword, const std::string& fileName) {
 	CodeField codeField(code, line, 10);
 	codeField.build();
 	std::cerr << type << ": " << message;

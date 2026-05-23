@@ -47,6 +47,7 @@ enum TokenType {
 	// class and interface declarations and condition statements
 	SATISFIES,          // satisfies
 	EXTENDS,            // extends
+	SUPER,				// super
 	IMPLEMENTS,         // implements
 	TYPEOF,				// typeof
 

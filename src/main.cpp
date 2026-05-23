@@ -33,9 +33,11 @@ int main() {
         main();
     )"; //thank you deep seek for example of code
 
+    std::cout << "Hello, rail!" << std::endl;
+
     std::unique_ptr<LexicalAnalyzer> analyzer = std::make_unique<LexicalAnalyzer>(text, "aboba.rail");
     analyzer.get()->tokenize();
 
-    TokenTypeUtils::printTokens(analyzer.get()->getTokensCopy());
+    //TokenTypeUtils::printTokens(analyzer.get()->getTokensCopy());
     return 0;
 }
