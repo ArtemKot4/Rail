@@ -1,0 +1,33 @@
+#ifndef TYPE_DECLARATION_EXPRESSION
+#define TYPE_DECLARATION_EXPRESSION
+
+#include <string>
+#include <memory>
+#include "ast/expressions/Expression.h"
+#include "compiler/syntax_analyzer/type/expressions/TypeExpression.h"
+#include "compiler/syntax_analyzer/type/TypeSyntaxAnalyzer.h"
+#include "ast/NodesForward.h"
+
+struct TypeDeclarationExpression : Expression {
+    using Expression::Expression;
+
+    std::string name;
+    std::unique_ptr<TypeExpression> type;
+
+    static Nodes parse(SyntaxAnalyzer& analyzer) {
+        TypeDeclarationExpression expression = TypeDeclarationExpression(analyzer.currentToken.line, analyzer.currentToken.column);
+        expression.name = analyzer.expect(TokenType::IDENTIFIER, 1).text;
+        analyzer.expect(TokenType::ASSIGN, 1);
+        analyzer.advance();
+        expression.type = TypeSyntaxAnalyzer::analyze(analyzer);
+        analyzer.expect(TokenType::SEMICOLON, 0);
+
+        return std::move(expression);
+    }
+
+    static bool find(SyntaxAnalyzer& analyzer) {
+        return analyzer.match(TokenType::TYPE);
+    }
+};
+
+#endif

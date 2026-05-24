@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 #include "Token.h"
 
 class TokenTypeUtils {
@@ -124,19 +125,19 @@ public:
             case TokenType::NUMBER_LITERAL: return "NUMBER_LITERAL";
             case TokenType::TRUE_LITERAL: return "TRUE_LITERAL";
             case TokenType::FALSE_LITERAL: return "FALSE_LITERAL";
-            case TokenType::NULL_LITERAL: return "NULL_LITERAL";
+            //case TokenType::NULL_LITERAL: return "NULL_LITERAL";
 
             case TokenType::IDENTIFIER: return "IDENTIFIER";
-            case TokenType::STRING: return "STRING";
-            case TokenType::CHAR: return "CHAR";
-            case TokenType::INTEGER: return "INTEGER";
-            case TokenType::LONG: return "LONG";
-            case TokenType::FLOAT: return "FLOAT";
-            case TokenType::DOUBLE: return "DOUBLE";
-            case TokenType::BOOLEAN: return "BOOLEAN";
-            case TokenType::VOID: return "VOID";
-            case TokenType::UNKNOWN: return "UNKNOWN";
-            case TokenType::NUMBER: return "NUMBER";
+            // case TokenType::STRING: return "STRING";
+            // case TokenType::CHAR: return "CHAR";
+            // case TokenType::INTEGER: return "INTEGER";
+            // case TokenType::LONG: return "LONG";
+            // case TokenType::FLOAT: return "FLOAT";
+            // case TokenType::DOUBLE: return "DOUBLE";
+            // case TokenType::BOOLEAN: return "BOOLEAN";
+            // case TokenType::VOID: return "VOID";
+            // case TokenType::UNKNOWN: return "UNKNOWN";
+            // case TokenType::NUMBER: return "NUMBER";
 
             case TokenType::IMPORT: return "IMPORT";
             case TokenType::EXPORT: return "EXPORT";

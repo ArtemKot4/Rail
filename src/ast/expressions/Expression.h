@@ -3,12 +3,10 @@
 
 #include <memory>
 #include "compiler/syntax_analyzer/SyntaxAnalyzer.h"
+#include "compiler/syntax_analyzer/Node.h"
 
-class Expression {
-public:
-    virtual ~Expression() = default;
-    virtual bool find(SyntaxAnalyzer& parser);
-    virtual std::unique_ptr<Node> parse(SyntaxAnalyzer& parser);
+struct Expression : Node {
+    using Node::Node;
 };
 
 #endif

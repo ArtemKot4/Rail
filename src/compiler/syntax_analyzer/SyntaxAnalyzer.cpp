@@ -2,6 +2,9 @@
 #include "compiler/lexical_analyzer/Token.h"
 #include "compiler/RailError.h"
 
+#include "ast/expressions/type/TypeDeclarationExpression.h"
+#include "BlockStatement.h"
+
 SyntaxAnalyzer::SyntaxAnalyzer(LexicalAnalyzer& lexicalAnalyzer) : lexicalAnalyzer(lexicalAnalyzer), tokens(lexicalAnalyzer.getTokensCopy()) {};
 
 std::optional<Token> SyntaxAnalyzer::advance(int count) {
@@ -28,13 +31,12 @@ bool SyntaxAnalyzer::match(TokenType type, int offset) {
 	return token.has_value() && token.value().type == type;
 }
 
-bool SyntaxAnalyzer::expect(TokenType type, int offset, const std::string& message, int line, int column,
+Token SyntaxAnalyzer::expect(TokenType type, int offset, const std::string& message, int line, int column,
 	const std::string& keyword, const std::string& reason) {
-	advance(offset);
-	if(!match(type, 0)) {
-		callError(message, line == -1 ? currentToken.line : line, column == -1 ? currentToken.column : column, keyword, reason);
-	}
-	return true;
+    if (!match(type, offset)) {
+        callError(message, line == -1 ? currentToken.line : line, column == -1 ? currentToken.column : column, keyword, reason);
+    }
+    return advance(offset).value();
 }
 
 [[noreturn]] void SyntaxAnalyzer::callError(const std::string& message, int line, int column, const std::string& keyword, const std::string& reason) {
@@ -42,14 +44,30 @@ bool SyntaxAnalyzer::expect(TokenType type, int offset, const std::string& messa
 }
 
 bool SyntaxAnalyzer::hasToken() {
-	return position < tokens.size();
+	return peek(0) != std::nullopt;
 }
 
-std::unique_ptr<BlockStatement> SyntaxAnalyzer::buildAST() {
+#include <iostream> //for debugging
+#include "compiler/syntax_analyzer/type/expressions/UnionExpression.h" //too
+
+std::unique_ptr<BlockStatement> SyntaxAnalyzer::analyze() {
 	auto block = std::make_unique<BlockStatement>(0, 0);
 	
 	while(hasToken()) {
-		
+		if(TypeDeclarationExpression::find(*this)) { //while NodeVisitor is not done
+			std::cout << "found type declaration" << std::endl;
+			Nodes expression = TypeDeclarationExpression::parse(*this);
+			block->addNode(std::move(expression));
+			if(auto* type = std::get_if<TypeDeclarationExpression>(&expression)) {
+				std::cout << "name is: " << type->name << type << std::endl;
+				if(std::holds_alternative<UnionExpression>(*type->type)) {
+					
+				}
+    		} //debug
+		} else {
+			auto token = peek(0);
+			callError("Unexpected token", token->line, token->column, token->text, "");
+    	}
 	}
 	return block;
 }

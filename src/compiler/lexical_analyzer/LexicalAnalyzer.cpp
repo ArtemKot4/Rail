@@ -403,6 +403,8 @@ static const std::unordered_map<std::string, TokenType> keywords = {
     { "new", TokenType::NEW },
     { "delete", TokenType::DELETE },
 
+    { "type", TokenType::TYPE },
+
     { "structure", TokenType::STRUCTURE },
     { "class", TokenType::CLASS },
     { "interface", TokenType::INTERFACE },
@@ -452,16 +454,17 @@ static const std::unordered_map<std::string, TokenType> keywords = {
     { "let", TokenType::LET },
     { "const", TokenType::CONST },
 
-    { "string", TokenType::STRING },
-    { "char", TokenType::CHAR },
-    { "int", TokenType::INTEGER },
-    { "long", TokenType::LONG },
-    { "float", TokenType::FLOAT },
-    { "double", TokenType::DOUBLE },
-    { "boolean", TokenType::BOOLEAN },
-    { "void", TokenType::VOID },
-    { "unknown", TokenType::UNKNOWN },
-    { "number", TokenType::NUMBER },
+    // Semantic analyzer, I believe in you, you will understand it at one day from TokenType::IDENTIFIER, don't worry
+    // { "string", TokenType::STRING },
+    // { "char", TokenType::CHAR },
+    // { "int", TokenType::INTEGER },
+    // { "long", TokenType::LONG },
+    // { "float", TokenType::FLOAT },
+    // { "double", TokenType::DOUBLE },
+    // { "boolean", TokenType::BOOLEAN },
+    // { "void", TokenType::VOID },
+    // { "unknown", TokenType::UNKNOWN },
+    // { "number", TokenType::NUMBER },
 
     { "import", TokenType::IMPORT },
     { "export", TokenType::EXPORT }

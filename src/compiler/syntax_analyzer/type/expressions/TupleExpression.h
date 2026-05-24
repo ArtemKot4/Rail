@@ -7,7 +7,7 @@
 
 struct TupleExpression : TypeExpression {
 	std::vector<std::unique_ptr<TypeExpression>> types;
-	TupleExpression(std::vector<std::unique_ptr<TypeExpression>> types) : types(types) {}
+	TupleExpression(std::vector<std::unique_ptr<TypeExpression>> types) : types(std::move(types)) {}
 };
 
 #endif

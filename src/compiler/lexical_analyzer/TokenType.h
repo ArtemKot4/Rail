@@ -44,6 +44,8 @@ enum TokenType {
 	OPERATOR,			// operator
 	KEYWORD,			// keyword
 
+	TYPE,				// type
+
 	// class and interface declarations and condition statements
 	SATISFIES,          // satisfies
 	EXTENDS,            // extends
@@ -155,20 +157,22 @@ enum TokenType {
 	NUMBER_LITERAL,     // numbers like 123, 123.0, 0.123
 	TRUE_LITERAL,       // true
 	FALSE_LITERAL,      // false
-	NULL_LITERAL,       // null
+	// NULL_LITERAL,       // null
 
 	// identifiers and keywords
 	IDENTIFIER,		    // identifier
-	STRING,             // string
-	CHAR,			    // char
-	INTEGER,            // int
-	LONG,               // long
-	FLOAT, 				// float
-	DOUBLE,             // double
-	BOOLEAN,            // boolean
-	VOID,               // void
-	UNKNOWN,			// unknown
-	NUMBER,             // number
+
+	// I let semantic analyzer handle these types as keywords, so they are not included in the keyword list in LexicalAnalyzer.cpp
+	// STRING,             // string
+	// CHAR,			    // char
+	// INTEGER,            // int
+	// LONG,               // long
+	// FLOAT, 				// float
+	// DOUBLE,             // double
+	// BOOLEAN,            // boolean
+	// VOID,               // void
+	// UNKNOWN,			// unknown
+	// NUMBER,             // number
 
 	// file
 	IMPORT,             // import
