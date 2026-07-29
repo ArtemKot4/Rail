@@ -20,7 +20,7 @@ public:
     std::optional<Token> advance(int count = 1);
     std::optional<Token> peek(int offset = 1);
     bool match(TokenType type, int offset = 1);
-    Token expect(TokenType type, int offset = 1, const std::string& message = "Missed token", int line = -1, int column = -1,
+    std::optional<Token> expect(TokenType type, const std::string& message = "Missed token", int line = -1, int column = -1,
         const std::string& keyword = " ", const std::string& reason = "");
     [[noreturn]] void callError(const std::string& message, int line, int column,
         const std::string& keyword = "", const std::string& reason = "");

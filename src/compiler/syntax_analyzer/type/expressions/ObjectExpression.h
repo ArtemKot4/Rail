@@ -7,18 +7,17 @@
 #include <unordered_map>
 
 struct ObjectExpression : TypeExpression {
-	std::unordered_map<std::string, std::unique_ptr<TypeExpression>> structure;
+	std::unordered_map<std::string, std::unique_ptr<Types>> structure;
 
-	static std::unique_ptr<TypeExpression> parse(SyntaxAnalyzer& analyzer, std::unique_ptr<TypeExpression> expression) {
+	static std::optional<Types> parse(SyntaxAnalyzer& analyzer, std::optional<Types> expression) {
 		auto object = std::make_unique<ObjectExpression>();
 		analyzer.advance();
-
 		std::unordered_map<std::string, std::unique_ptr<TypeExpression>> structure;
 		
 		while(true) {
-			Token key = analyzer.expect(TokenType::IDENTIFIER);
+			std::optional<Token> key = analyzer.expect(TokenType::IDENTIFIER);
 			analyzer.expect(TokenType::COLON);
-			structure[key.text] = TypeSyntaxAnalyzer::analyze(analyzer);
+			structure[key.value().text] = TypeSyntaxAnalyzer::analyze(analyzer);
 			if(analyzer.match(TokenType::RIGHT_BRACE, 0)) {
 				break;
 			}

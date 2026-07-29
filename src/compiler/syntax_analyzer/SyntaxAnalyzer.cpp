@@ -31,12 +31,15 @@ bool SyntaxAnalyzer::match(TokenType type, int offset) {
 	return token.has_value() && token.value().type == type;
 }
 
-Token SyntaxAnalyzer::expect(TokenType type, int offset, const std::string& message, int line, int column,
+std::optional<Token> SyntaxAnalyzer::expect(TokenType type, const std::string& message, int line, int column,
 	const std::string& keyword, const std::string& reason) {
-    if (!match(type, offset)) {
+    
+	if(!match(type, 0)) {
         callError(message, line == -1 ? currentToken.line : line, column == -1 ? currentToken.column : column, keyword, reason);
     }
-    return advance(offset).value();
+	auto current = peek(0);
+    advance(1);
+	return current;
 }
 
 [[noreturn]] void SyntaxAnalyzer::callError(const std::string& message, int line, int column, const std::string& keyword, const std::string& reason) {

@@ -8,9 +8,15 @@
 #include "compiler/syntax_analyzer/SyntaxAnalyzer.h"
 
 struct NullableExpression : TypeExpression {
-    static std::unique_ptr<TypeExpression> parse(SyntaxAnalyzer& analyzer, std::unique_ptr<TypeExpression> expression) {
+    static std::optional<Types> parse(SyntaxAnalyzer& analyzer, std::optional<Types> expression) {
         analyzer.advance();
-        return std::make_unique<UnionExpression>(UnionExpression(std::move(expression), std::make_unique<LiteralExpression>(LiteralExpression("null"))));
+        if(!expression.has_value()) {
+            analyzer.callError("Unknown type for nullable", analyzer.currentToken.line, analyzer.currentToken.column, "?", "Need to use like `type?`");
+        }
+        return std::make_unique<UnionExpression>(
+            std::make_unique<Types>(std::move(expression.value())),
+            std::make_unique<Types>(std::make_unique<LiteralExpression>("null"))
+        );
     }
     
     static bool find(SyntaxAnalyzer& analyzer) {

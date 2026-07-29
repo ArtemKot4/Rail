@@ -4,14 +4,30 @@ Rail предлагает несколько нестандартных опер
 ## Логические операторы
 Здесь вы познакомитесь с новыми способами работы с типами, которых нет в Java.
 
-### extends-проверки
-Это аналог instanceof из Java, но работающий только с [классами](..\object-oriented/class/intro.md), [юнитами](..\object-oriented/unit/intro.md) и [перечислениями](..\object-oriented/enum/intro.md)
-
-Такие проверки проверяют, что объект является наследником выше перечисленного (для примеров класса), либо же что класс является наследником. 
+### is-проверки
+Такие проверки строго проверяют, является ли объект экземпляром конкретного класса.
 
 Синтаксис:
 ```rail
-значение extends класс
+объект is класс
+```
+
+Например:
+```rail
+class A {}
+class B extends A {}
+
+const b = new B();
+console.log(b is B); //true
+console.log(b is A); //false
+```
+
+### extends-проверки
+Такие проверки проверяют, что объект является наследником или самим экземпляром.
+
+Синтаксис:
+```rail
+объект extends класс
 ```
 
 Примеры использования:
@@ -24,30 +40,34 @@ Rail предлагает несколько нестандартных опер
         ) {}
     }
 
-const john: User = new User(name="John", age=30); 
+    const john: User = new User(name="John", age=30); 
 
-console.log(john extends User); //true
-```
+    console.log(john extends User); //true
+
+    class Admin extends User {}
+
+    console.log(new Admin(name="Mark", age=25) extends User); //true
+    ```
 
 2. Проверяем, что класс наследник:
-```rail
-    class User {
-        public constructor(
-            public name: string;
-            public age: int;
-        ) {}
-    }
-
-    class Admin extends User {
-        public constructor(public protectionLevel: string, name: string, age: int) {
-            super(name, age);
+    ```rail
+        class User {
+            public constructor(
+                public name: string;
+                public age: int;
+            ) {}
         }
-    }
 
-const john: User = new User(name="John", age=30); 
+        class Admin extends User {
+            public constructor(public protectionLevel: string, name: string, age: int) {
+                super(name, age);
+            }
+        }
 
-console.log(Admin extends User); //true
-```
+    const john: User = new User(name="John", age=30); 
+
+    console.log(Admin extends User); //true
+    ```
 
 ### super-проверки
 Проверяет, является ли один класс прямым родителем другого. В таких проверках сравнение объектов недопустимо.

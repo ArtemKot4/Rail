@@ -3,16 +3,17 @@
 
 #include <memory>
 #include <vector>
-#include "TypeExpression.h"
+#include <optional>
+#include "compiler/syntax_analyzer/type/TypesForward.h"
 
 class SyntaxAnalyzer;
 
 struct TypeVisitor {
     bool (*find)(SyntaxAnalyzer&);
-    std::unique_ptr<TypeExpression> (*parse)(SyntaxAnalyzer&, std::unique_ptr<TypeExpression>);
+    std::optional<Types> (*parse)(SyntaxAnalyzer&, std::optional<Types>);
     
     TypeVisitor(bool (*f)(SyntaxAnalyzer&), 
-                std::unique_ptr<TypeExpression> (*p)(SyntaxAnalyzer&, std::unique_ptr<TypeExpression>))
+                std::optional<Types> (*p)(SyntaxAnalyzer&, std::optional<Types>))
         : find(f), parse(p) {}
 };
 

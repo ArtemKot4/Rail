@@ -5,17 +5,24 @@
 #include "compiler/syntax_analyzer/type/TypeSyntaxAnalyzer.h"
 
 struct UnionExpression : TypeExpression {
-    std::unique_ptr<TypeExpression> left;
-    std::unique_ptr<TypeExpression> right;
+    std::unique_ptr<Types> left;
+    std::unique_ptr<Types> right;
 
     UnionExpression() {};
-    UnionExpression(std::unique_ptr<TypeExpression> left, std::unique_ptr<TypeExpression> right): left(std::move(left)), right(std::move(right)) {};
+    UnionExpression(std::unique_ptr<Types> left, std::unique_ptr<Types> right): left(std::move(left)), right(std::move(right)) {};
 
-    static std::unique_ptr<TypeExpression> parse(SyntaxAnalyzer& analyzer, std::unique_ptr<TypeExpression> expression) {
+    static std::optional<Types> parse(SyntaxAnalyzer& analyzer, std::optional<Types> expression) {
         auto unionExpression = std::make_unique<UnionExpression>();
-        unionExpression->left = std::move(expression);
+        if(!expression.has_value()) {
+            analyzer.callError("Unexpected empty left part", analyzer.currentToken.line, analyzer.currentToken.column, "|", "Missing left expression");
+        }
+        unionExpression->left = std::make_unique<Types>(std::move(expression.value()));
         analyzer.advance();
-        unionExpression->right = TypeSyntaxAnalyzer::analyze(analyzer);
+        auto rightExpression = TypeSyntaxAnalyzer::analyze(analyzer);
+        if(!rightExpression.has_value()) {
+            analyzer.callError("Unexpected empty right part", analyzer.currentToken.line, analyzer.currentToken.column, "|", "Missing right expression");
+        }
+        unionExpression->right = std::make_unique<Types>(std::move(rightExpression.value()));
         return unionExpression;
     }
 

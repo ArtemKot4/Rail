@@ -9,10 +9,9 @@
 
 struct LiteralExpression : TypeExpression {
     std::string value;
-
     LiteralExpression(const std::string& value) : value(value) {}
     
-    static std::unique_ptr<TypeExpression> parse(SyntaxAnalyzer& analyzer, std::unique_ptr<TypeExpression> expression) {
+    static std::optional<Types> parse(SyntaxAnalyzer& analyzer, std::optional<Types> expression) {
         std::string value = analyzer.currentToken.text;
         analyzer.advance();
         return std::make_unique<LiteralExpression>(value);

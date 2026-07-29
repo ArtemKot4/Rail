@@ -28,6 +28,13 @@ Generic тип объявляется при помощи модификатор
 <T super Type>
 ```
 
+### Модификатор satisfies
+Модификатор satisfies позволяет проверять структуру принимаемого типа в дженерик-аргумент на соответствие. Это удобно в ряде случаев, например когда мы ожидаем сообщение, содержащее определённые поля
+
+```rail
+<Message satisfies { name: string, text: string }>
+```
+
 ## Generic-аргументы
 Мы можем принимать в качестве аргументов для функций, процедур и лямбд generic типы.
 
@@ -51,18 +58,105 @@ added("1", "2"); //string, T стало string
 console.log(lambdaAdd(1, 2)); //3, T стало int
 ```
 
-## Классы с Generic типами
+### Generic-аргументы с значением по-умолчанию
+Такие аргументы могут не требовать значение, а иметь его по-умолчанию. Чтобы его задать, нужно поставить равно после декларации ограничений дженерик-аргумента. 
+
+Пример:
+```rail
+function anyNum<T extends number = int>(numberArg: T): numberArg;
+```
+### Дженерики с ограничением типа по ссылке
+Но дженерики мощнее, чем вы думаете! Можно указывать, что тип должен быть передан при помощи ссылки через `<T extends Тип&>.
+```rail
+function getSize<T extends string& | int[]&>(data: T): int {
+    if(data is string&) {
+        return data.length;
+    } else if(data is int[]&) {
+        return data.length;
+    }
+    return 0;
+}
+
+let name = "Rail";
+let arr = [1, 2, 3, 4, 5];
+
+console.log(getSize(name)); // 4
+console.log(getSize(arr));  // 5
+```
+Rail автоматически передаст подходящие типы данных по ссылке.
+
+### Дженерики с ограничением типа по неизменяемости
+Так же при помощи дженериков можно брать только неизменяемые значения, поставив перед типом данных const:
+```rail
+function isConstInt<T extends const int>(value: T): true;
+```
+
+### Дженерики-исключающие типы
+Дженерики-исключающие типы позволяют не принимать определённый тип данных.
+```rail
+function isNotInt<T !extends int>(value: T): true;
+```
+
+### Булева-математика дженерик-типов
+Дженерики поддерживают такие операторы как && (и) и || (или). Это нужно, когда фильтрация становится слишком большой, чтобы уместить в одном компактном выражении.
+
+Так же и тернарный оператор может применяться.
+
+Напишем такой дженерик как пример:
+```rail
+function filterNumbers<T extends number, U extends number, Result = T extends int& && U !extends float | double ? const [T, U]& : null>(a: T, b: U): Result {
+    return Result is [T, U]& ? [a, b]& : null;
+}
+
+console.log(filterNumbers(1, 2)); //[1, 2]
+```
+
+Выглядит сложно, но всё проще, чем вы думаете! Давайте разберём его аккуратно, обращая внимание на каждую деталь.
+
+1.  ```rail
+    T extends number
+    ```
+    Данным действием мы ограничиваем наш дженерик-аргумент, теперь `T` может быть только числом.
+2.  ```
+    U extends number
+    ```
+    И `U` тоже может быть только числом.
+3.  ```
+    Result = T extends int&
+    ```
+    Мы проверяем, что `T` не абстрактное число, а именно целочисленное `int`.
+4.  ```rail
+    && U !extends float | double ? const [T, U]& : null
+    ```
+    Если `U` не абстрактное число: `(!extends float | double)`, а именно любое целочисленное, то мы возвращаем `const [T, U]&`, иначе `null`.
+    `const [T, U]&` это тип, который хранит `[T, U]` в массиве, который обязан быть ссылкой и const значением, при условии, что `T` и `U` являются числами.
+
+Напишем тип, который обязан будет быть ссылкой и const значением, при этом быть числом.
+
+```rail
+function isConstIntAndLinked<const T& extends int>(value: T): true;
+```
+Почему тут `const T` в начале? Таким образом мы можем указать, что каждый принимаемый тип должен быть **неизменяемым** и передаваться **при помощи ссылки**.
+
+## Конструкторы классов с Generic типами
 Мы можем принимать в качестве аргументов generic типы.
 ```rail
-class MyClass<T> {
-    public constructor(public value: T) {}
+class MyClass {
+    public constructor<T>(public value: T) {}
 }
+
+let obj = new MyClass(10);       // T = int
+let obj2 = new MyClass("Hello"); // T = string
+console.log(obj.value); // 10
+console.log(obj2.value); // "Hello"
 ```
 
 ## Произвольные типы с Generic
 Мы можем для своих типов принимать generic типы.
 ```rail
 type<T> = T & { example: true }
+
+const obj: type<MyClass> = { example: true, value: 10 }; // T = MyClass;
 ```
 
 ---
