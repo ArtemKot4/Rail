@@ -110,7 +110,7 @@ function isValidAge(age: int): age >= 18 ? "да" : "нет";
 Давайте рассмотрим простой пример без defer.
 
 ```rail
-function getTextFromFile(fileName: string): string, throws RuntimeException {
+function getTextFromFile(fileName: string): string {
     //нам нужно гарантировать, что файл закроется даже если функция выбросит исключение
     try {
         const openedFile = //...открыли_файл_через_какой-то_способ(fileName);
@@ -128,7 +128,7 @@ function getTextFromFile(fileName: string): string, throws RuntimeException {
 В данном случае у нас закрывается файл и при исключении, и перед возвратом текста. Это всё, конечно, работает отлично, но можно сделать то же самое намного короче благодяра новому механизму:
 
 ```rail
-function getTextFromFile(fileName: string): string, throws RuntimeException {
+function getTextFromFile(fileName: string): string {
     const openedFile = //...открыли_файл_через_какой-то_способ(fileName);
     defer openedFile.close();
 
@@ -140,7 +140,7 @@ function getTextFromFile(fileName: string): string, throws RuntimeException {
 И теперь компилятор преобразует код в первый вариант самостоятельно, и будет выглядеть он почти так же:
 
 ```rail
-function getTextFromFile(fileName: string): string, throws RuntimeException {
+function getTextFromFile(fileName: string): string {
     const openedFile = //...открыли_файл_через_какой-то_способ(fileName);
     const __callDefer = () => {
         openedFile.close();

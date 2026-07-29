@@ -15,26 +15,6 @@ Generic тип объявляется при помощи модификатор
 <T, U>
 ```
 
-### Модификатор extends
-Модификатор extends позволяет ограничить типы, которые могут быть использованы в generic типах: Класс -> наследники.
-
-```rail
-<T extends Type>
-```
-### Модификатор super
-Модификатор super работает похожим образом на Java аналог и позволяет ограничить типы, которые могут быть использованы в generic типах: Класс -> родители.
-
-```rail
-<T super Type>
-```
-
-### Модификатор satisfies
-Модификатор satisfies позволяет проверять структуру принимаемого типа в дженерик-аргумент на соответствие. Это удобно в ряде случаев, например когда мы ожидаем сообщение, содержащее определённые поля
-
-```rail
-<Message satisfies { name: string, text: string }>
-```
-
 ## Generic-аргументы
 Мы можем принимать в качестве аргументов для функций, процедур и лямбд generic типы.
 
@@ -63,49 +43,22 @@ console.log(lambdaAdd(1, 2)); //3, T стало int
 
 Пример:
 ```rail
-function anyNum<T extends number = int>(numberArg: T): numberArg;
+function anyNum<T = int>(numberArg: T): numberArg;
 ```
-### Дженерики с ограничением типа по ссылке
-Но дженерики мощнее, чем вы думаете! Можно указывать, что тип должен быть передан при помощи ссылки через `<T extends Тип&>.
+
+## Математика условных типов
+
+Дженерики опираются на математику условных типов и могут комбинировать в себе эти операторы, поэтому вам пригодится **[следующая статья](conditional_types.md)**
+
+### Разбираем дженерик с условными типами на составляющие
+
+Напишем дженерик как пример использования операторов:
 ```rail
-function getSize<T extends string& | int[]&>(data: T): int {
-    if(data is string&) {
-        return data.length;
-    } else if(data is int[]&) {
-        return data.length;
+function filterNumbers<T extends number, U extends number, Result = T extends int& && U !extends (float | double) ? [T, U] : null>(a: T, b: U): Result {
+    if(Result is [T, U]) {
+        return [a, b];
     }
-    return 0;
-}
-
-let name = "Rail";
-let arr = [1, 2, 3, 4, 5];
-
-console.log(getSize(name)); // 4
-console.log(getSize(arr));  // 5
-```
-Rail автоматически передаст подходящие типы данных по ссылке.
-
-### Дженерики с ограничением типа по неизменяемости
-Так же при помощи дженериков можно брать только неизменяемые значения, поставив перед типом данных const:
-```rail
-function isConstInt<T extends const int>(value: T): true;
-```
-
-### Дженерики-исключающие типы
-Дженерики-исключающие типы позволяют не принимать определённый тип данных.
-```rail
-function isNotInt<T !extends int>(value: T): true;
-```
-
-### Булева-математика дженерик-типов
-Дженерики поддерживают такие операторы как && (и) и || (или). Это нужно, когда фильтрация становится слишком большой, чтобы уместить в одном компактном выражении.
-
-Так же и тернарный оператор может применяться.
-
-Напишем такой дженерик как пример:
-```rail
-function filterNumbers<T extends number, U extends number, Result = T extends int& && U !extends float | double ? const [T, U]& : null>(a: T, b: U): Result {
-    return Result is [T, U]& ? [a, b]& : null;
+    return null;
 }
 
 console.log(filterNumbers(1, 2)); //[1, 2]
@@ -126,7 +79,7 @@ console.log(filterNumbers(1, 2)); //[1, 2]
     ```
     Мы проверяем, что `T` не абстрактное число, а именно целочисленное `int`.
 4.  ```rail
-    && U !extends float | double ? const [T, U]& : null
+    && U !extends (float | double) ? [T, U] : null
     ```
     Если `U` не абстрактное число: `(!extends float | double)`, а именно любое целочисленное, то мы возвращаем `const [T, U]&`, иначе `null`.
     `const [T, U]&` это тип, который хранит `[T, U]` в массиве, который обязан быть ссылкой и const значением, при условии, что `T` и `U` являются числами.
