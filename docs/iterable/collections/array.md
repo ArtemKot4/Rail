@@ -96,9 +96,22 @@ let names: string[3-] = ["John", "Steve"];
 
 ```rail
 let rgb: [int, int, int] = [0, 0, 0];
-r[0] = 1;
-r[1] = 1;
-r[2] = 1;
+rgb[0] = 1;
+rgb[1] = 1;
+rgb[2] = 1;
+```
+
+#### Массив ссылок
+Все переданные значения автоматически переданы как ссылки, если хранимый тип выглядит как `тип&`.
+
+```rail
+type linkedInts = int&[];
+
+let value = 5;
+let array: linkedInts = [1, 2, 3, 4, value]
+
+array[4] = 6;
+console.log(value); //6
 ```
 
 ### Получаем значение массива
@@ -251,7 +264,7 @@ const names: string[3] = ["Artem", "Steve", "Bob"];
 Функция map принимает лямбду, которая принимает каждый из значений массива и возвращает новое значение.
 
 ```rail
-const nums20: int[20] = [i for let i = 0; i < 20; i++];
+const nums20: int[20] = [i for (let i = 0; i < 20; i++) ()];
 const doubledNums: int[] = nums20.map(num => num * 2);
 console.log(doubledNums); //[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38]
 ```
@@ -261,7 +274,7 @@ console.log(doubledNums); //[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 
 Функция filter принимает лямбду, которая принимает каждый из значений массива и возвращает true, если значение должно быть включено в новый массив.
 
 ```rail
-const nums20: int[20] = [i for let i = 0; i < 20; i++];
+const nums20: int[20] = [i for (let i = 0; i < 20; i++) ()];
 const evenNums: int[] = nums20.filter(num => num % 2 == 0);
 console.log(evenNums); //[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 ```
@@ -271,7 +284,7 @@ console.log(evenNums); //[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 Функция reduce принимает лямбду, которая принимает каждый из значений массива и возвращает новое значение.
 
 ```rail
-const nums20: int[20] = [i for let i = 0; i < 20; i++];
+const nums20: int[20] = [i for (let i = 0; i < 20; i++) ()];
 const sum: int = nums20.reduce((acc, num) => acc + num, 0);
 console.log(sum); //190
 ```
@@ -281,7 +294,7 @@ console.log(sum); //190
 Функция sort принимает лямбду, которая принимает два значения и возвращает true, если первое значение должно быть перед вторым.
 
 ```rail
-const nums20: int[20] = [i for let i = 0; i < 20; i++];
+const nums20: int[20] = [i for (let i = 0; i < 20; i++) ()];
 const sortedNums: int[] = nums20.sort((a, b) => a > b);
 console.log(sortedNums); //[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
 ```
@@ -291,7 +304,7 @@ console.log(sortedNums); //[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
 Функция some принимает лямбду, которая принимает каждый из значений массива и возвращает true, если хотя бы одно значение удовлетворяет условию.
 
 ```rail
-const nums20: int[20] = [i for let i = 0; i < 20; i++];
+const nums20: int[20] = [i for (let i = 0; i < 20; i++) ()];
 const someEven: bool = nums20.some(num => num % 2 == 0);
 console.log(someEven); //true
 ```
@@ -301,7 +314,7 @@ console.log(someEven); //true
 Функция every принимает лямбду, которая принимает каждый из значений массива и возвращает true, если все значения удовлетворяют условию.
 
 ```rail
-const nums20: int[20] = [i for let i = 0; i < 20; i++];
+const nums20: int[20] = [i for (let i = 0; i < 20; i++) ()];
 const everyEven: bool = nums20.every(num => num % 2 == 0);
 console.log(everyEven); //false
 ```
