@@ -28,7 +28,18 @@ for(let i = 0; i < 10; i++) {
 
 Или при помощи `range`:
 ```rail
-for(const i in range(10)) {
+for(const i of range(10)) {
     console.log(i);
+}
+```
+
+## Используйте `&` для переменных
+Это позволит не копировать перебираемую коллекцию. Используйте, если это нужно.
+
+```rail
+const nums10 = range(10);
+
+for(const num of nums10&) {
+    console.log(num);
 }
 ```

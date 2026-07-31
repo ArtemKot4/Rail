@@ -93,11 +93,11 @@ function isConstIntAndLinked<const T& extends int>(value: T): true;
 ```
 Почему тут `const T` в начале? Таким образом мы можем указать, что каждый принимаемый тип должен быть **неизменяемым** и передаваться **при помощи ссылки**.
 
-## Конструкторы классов с Generic типами
-Мы можем принимать в качестве аргументов generic типы.
+## Конструкторы классов с дженерик-типами
+Мы можем принимать в качестве аргументов дженерик типы.
 ```rail
 class MyClass {
-    public constructor<T>(public value: T) {}
+    public constructor<T>(public value: T);
 }
 
 let obj = new MyClass(10);       // T = int
@@ -106,8 +106,21 @@ console.log(obj.value); // 10
 console.log(obj2.value); // "Hello"
 ```
 
-## Произвольные типы с Generic
-Мы можем для своих типов принимать generic типы.
+## Классы с дженерик-типами
+Аргументы этих дженериков будут доступны для каждого поля и метода класса.
+
+```rail
+class MyClass<T> {
+    public constructor(public value: T);
+
+    public getValue(): T {
+        return this.value;
+    }
+}
+```
+
+## Произвольные типы с дженериками
+Мы можем для своих типов принимать дженерик типы.
 ```rail
 type<T> = T & { example: true }
 
