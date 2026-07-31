@@ -44,7 +44,7 @@ iterator countdown<T extends int[]>(start: int): T {
 ### Используем в for
 
 ```rail
-for(let n of countdown(3)) {
+for(let n& of countdown(3)) {
     console.log(n);
 }
 // 3
@@ -97,7 +97,7 @@ iterator range(start: int, end: int, step: int): int {
 ### Используем в for
 
 ```rail
-for(let n of range(0, 3, 1)) {
+for(let n& of range(0, 3, 1)) {
     console.log(n);
 }
 // 0
@@ -126,7 +126,7 @@ for(let n of range(0, 3, 1)) {
    
    ```rail
    const collection = [1, 2, 3, 4, 5]
-   const _for = value * 2 for(const value of collection);
+   const _for = value * 2 for(const value& of collection);
    ```
 
 2. Анонимный итератор с принимаемыми аргументами.
@@ -175,7 +175,7 @@ for(let n of range(0, 3, 1)) {
 
 3. Выводим `_for` с помощью цикла.
    ```rail
-   for(const value of _for) {
+   for(const value& of _for) {
       console.log(value);
    }
    // 2
@@ -200,12 +200,12 @@ for(let n of range(0, 3, 1)) {
    ```
 2. Rail
     ```rail
-    console.log([i for (const i of range(10)) ()]); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    console.log([i for (const i& of range(10)) ()]); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     ```
 Или мы можем создать саму коллекцию из итератора при помощи дженерика:
 
 ```rail
-const array = i for (const i of range(10)) <int[]>();
+const array = i for (const i& of range(10)) <int[]>();
 console.log(array); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 ## Типизация итераторов
@@ -220,7 +220,7 @@ const array: range[] = [range(1, 10), range(10, 20)];
 Если захотим выполнить, можем сделать это при помощи анонимного итератора:
 
 ```rail
-const arrayCompleted = array.map(iteratorValue => value for (const value of iteratorValue) ());
+const arrayCompleted = array.map(iteratorValue => value for (const value& of iteratorValue) ());
 ```
 
 Или ещё проще, но тогда придётся следовать ограничению `T`, если оно есть у используемого итератора:
