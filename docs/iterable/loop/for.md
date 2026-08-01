@@ -28,7 +28,7 @@ for(let i = 0; i < 10; i++) {
 
 Или при помощи `range`:
 ```rail
-for(const i of range(10)) {
+for(const i& of range(10)) {
     console.log(i);
 }
 ```
@@ -53,13 +53,15 @@ for(const num& of nums10) {
 const books = ["rail language", "java", "c++"];
 const descriptions = ["like a TypeScript", "is legend", "is hard"];
 
-for(const book& of books, const description& of descriptions, let index = 1; index <= books.length; index++) {
-    console.log(index + ". " + book + " " + descriptions);
+for(const book&? of books, const description&? of descriptions, let index = 1; index <= books.length; index++) {
+    console.log(index + ". " + book + " " + description);
 }
 // 1. rail language like a TypeScript
 // 2. java is legend
 // 3. c++ is hard
 ```
+
+Почему `book&?` и `description&?` в нашем примере с композицией? Чтобы мы не брали ссылки на null, когда итераторы закончатся, так как перебираем сразу несколько и размерности могут отличаться от объекта к объекту, в нашем случае итераторы закончатся благодаря движению `index`. Компилятор потребует вставки `?`, если не гарантированно, что количество ключей одинаково.
 
 Посмотрим на то, как это может выглядеть после компиляции.
 
@@ -100,7 +102,7 @@ const descriptions: string[3] = ["like a TypeScript", "is legend", "is hard"];
             break;
         }
 
-        console.log(index + ". " + book + " " + descriptions);
+        console.log(index + ". " + book + " " + description);
     }
 }
 ```

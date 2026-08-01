@@ -14,7 +14,7 @@ console.log(map.get('key')); // value
 
 ```rail
 Map<K, V>
-Map<const O& extends static Object, const K = keyof O, V = O[keyof O]>(object: O);
+Map<const O& extends static Object, const K = keyof O, V = O[K]>(object?: O);
 ```
 
 ## Методы

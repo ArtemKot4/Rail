@@ -126,7 +126,7 @@ for(let n& of range(0, 3, 1)) {
    
    ```rail
    const collection = [1, 2, 3, 4, 5]
-   const _for = value * 2 for(const value& of collection);
+   const _multiplied = value * 2 for(const value& of collection);
    ```
 
 2. Анонимный итератор с принимаемыми аргументами.
@@ -137,7 +137,7 @@ for(let n& of range(0, 3, 1)) {
    
    
    ```
-Мы создали два итератора, `_for` и `_range`, но сами по себе итераторы не имеют смысла, если мы их не вызываем. Так давайте это исправим!
+Мы создали два итератора, `_multiplied` и `_range`, но сами по себе итераторы не имеют смысла, если мы их не вызываем. Так давайте это исправим!
 
 ### Вызываем итераторы
 
@@ -153,10 +153,10 @@ for(let n& of range(0, 3, 1)) {
 
 Перейдём к вызовам:
 
-1.  Выводим `_for` 
+1.  Выводим `_multiplied` 
     ```rail
-    console.log(_for<int[]>()); //[2, 4, 6, 8, 10], создали коллекцию при помощи вызова итератора
-    const collection_injected = [_for()]; //получили значения после выполнения итератора внутрь массива
+    console.log(_multiplied<int[]>()); //[2, 4, 6, 8, 10], создали коллекцию при помощи вызова итератора
+    const collection_injected = [_multiplied()]; //получили значения после выполнения итератора внутрь массива
     print(collection_injected); //[2, 4, 6, 8, 10]
     ```
 
@@ -173,9 +173,9 @@ for(let n& of range(0, 3, 1)) {
    console.log(iter<int[]>()); //[1, 2, 3, 4]
    ```
 
-3. Выводим `_for` с помощью цикла.
+3. Выводим `_multiplied` с помощью цикла.
    ```rail
-   for(const value& of _for) {
+   for(const value& of _multiplied) {
       console.log(value);
    }
    // 2
