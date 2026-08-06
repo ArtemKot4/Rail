@@ -17,10 +17,10 @@ struct TypeDeclarationExpression : Expression {
 
     static Nodes parse(SyntaxAnalyzer& analyzer) {
         TypeDeclarationExpression expression = TypeDeclarationExpression(analyzer.currentToken.line, analyzer.currentToken.column);
-        expression.name = analyzer.expect(TokenType::IDENTIFIER, 1).text;
-        analyzer.expect(TokenType::ASSIGN, 1);
+        expression.name = analyzer.expect(TokenType::IDENTIFIER).value().text;
+        analyzer.expect(TokenType::ASSIGN);
         analyzer.advance();
-        expression.type = TypeSyntaxAnalyzer::analyze(analyzer);
+        expression.type = TypeSyntaxAnalyzer::analyze(analyzer).value();
         analyzer.expect(TokenType::SEMICOLON, 0);
         analyzer.advance();
 

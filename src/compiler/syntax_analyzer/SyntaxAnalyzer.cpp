@@ -51,7 +51,6 @@ bool SyntaxAnalyzer::hasToken() {
 }
 
 #include <iostream> //for debugging
-#include "compiler/syntax_analyzer/type/expressions/UnionExpression.h" //too
 
 std::unique_ptr<BlockStatement> SyntaxAnalyzer::analyze() {
 	auto block = std::make_unique<BlockStatement>(0, 0);
@@ -61,12 +60,13 @@ std::unique_ptr<BlockStatement> SyntaxAnalyzer::analyze() {
 			std::cout << "found type declaration" << std::endl;
 			Nodes expression = TypeDeclarationExpression::parse(*this);
 			block->addNode(std::move(expression));
-			if(auto* type = std::get_if<TypeDeclarationExpression>(&expression)) {
-				std::cout << "name is: " << type->name << type << std::endl;
-				if(std::holds_alternative<UnionExpression>(*type->type)) {
+			// if(const auto* type = std::get_if<TypeDeclarationExpression>(&expression)) {
+			// 	std::cout << "name is: " << type->name << std::endl;
+				// if(std::holds_alternative<UnionExpression>(type)) {
+				// 	std::cout << "is union expression" << std::endl;
 					
-				}
-    		} //debug
+				// }
+    		//} //debug
 		} else {
 			auto token = peek(0);
 			callError("Unexpected token", token->line, token->column, token->text, "");

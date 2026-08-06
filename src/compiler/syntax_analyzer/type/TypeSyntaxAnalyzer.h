@@ -14,7 +14,7 @@ namespace TypeSyntaxAnalyzer {
 
 			for(const auto& visitor : visitors) {
 				if(visitor.find(analyzer)) {
-					expression = visitor.parse(analyzer, expression);
+					expression = visitor.parse(analyzer, std::move(expression));
 					foundExpression = true;
 				}
 			}

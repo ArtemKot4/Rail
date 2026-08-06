@@ -12,12 +12,12 @@ struct ObjectExpression : TypeExpression {
 	static std::optional<Types> parse(SyntaxAnalyzer& analyzer, std::optional<Types> expression) {
 		auto object = std::make_unique<ObjectExpression>();
 		analyzer.advance();
-		std::unordered_map<std::string, std::unique_ptr<TypeExpression>> structure;
+		std::unordered_map<std::string, std::unique_ptr<Types>> structure;
 		
 		while(true) {
 			std::optional<Token> key = analyzer.expect(TokenType::IDENTIFIER);
 			analyzer.expect(TokenType::COLON);
-			structure[key.value().text] = TypeSyntaxAnalyzer::analyze(analyzer);
+			structure[key.value().text] = std::make_unique<Types>(std::move(TypeSyntaxAnalyzer::analyze(analyzer).value()));
 			if(analyzer.match(TokenType::RIGHT_BRACE, 0)) {
 				break;
 			}

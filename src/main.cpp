@@ -1,8 +1,7 @@
 ﻿#include <iostream>
-#include "compiler/lexical_analyzer/LexicalAnalyzer.h"
-#include "compiler/syntax_analyzer/SyntaxAnalyzer.h"
+#include "compiler/lexical_analyzer/LexicalAnalyzer.cpp"
+#include "compiler/syntax_analyzer/SyntaxAnalyzer.cpp"
 #include "compiler/lexical_analyzer/TokenTypeUtils.h"
-
 
 void testTypeParsing() {
     std::string text = "type testing = { hello: string, rail: string }?";
@@ -14,7 +13,7 @@ void testTypeParsing() {
 }
 
 int main() {
-    std::cout << "Hello, rail!" << std::endl;
+    std::cout << "Hello, rail! after 2 months!" << std::endl;
 
     //TokenTypeUtils::printTokens(analyzer.get()->getTokensCopy());
     return 0;
